@@ -25,6 +25,10 @@ background-position: top center;
 background-repeat: no-repeat;
 }
 
+body.internal-page {
+    background-image: url("../img-nerds/grey-back-inernal.png");  /* норм решение с картинкой фоном? */   
+}
+
 .next {
     text-transform: uppercase;
 }
@@ -210,6 +214,7 @@ color: #283136;
     background-color: #eeeeee;
     text-transform: uppercase; 
     color: #000000;
+    font-weight: bold;
 }
 
 .footer-contacts {
@@ -233,6 +238,12 @@ color: #283136;
     vertical-align: middle; 
 }
 
+.view-filter {
+background-color: #eeeeee;
+text-align: center;
+vertical-align: middle;
+
+}
 /*Флексбоксы*/
 
 .main-header {
@@ -374,7 +385,7 @@ color: #283136;
     justify-content: space-between;
 } 
 
-.main-title  {
+ .main-title  {
     text-align: center;
     font-size: 55;
     
@@ -386,7 +397,22 @@ color: #283136;
 }   
 
 .filter-form {
-    
-    width: 260px;
+    display: flex;
+    flex-direction: column; 
 }   
-           
+
+fieldset:nth-of-type(1) {
+width: 260px;
+min-height: 205px;
+margin-bottom: 60px;
+}
+
+fieldset:nth-of-type(2) {
+    width: 260px;
+    margin-bottom: 60px;
+    }
+
+fieldset:nth-of-type(3) {
+    width: 260px;
+    margin-bottom: 50px;
+    }    
