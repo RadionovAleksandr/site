@@ -364,15 +364,29 @@ color: #283136;
 }
 
 .footer-social {
-    order: 1;
-    flex-direction: column;
     width: 580px;
     margin-left: 140px;
 }   
 .footer-social-web {
-    order: -1;
     display: flex;
     margin-left: 20px;
     width: 260px;
     justify-content: space-between;
-}                       
+} 
+
+.main-title  {
+    text-align: center;
+    font-size: 55;
+    
+    display: flex;
+    margin: 0 auto;
+    width: 500px;
+    margin-top: 85;
+    margin-bottom: 110;
+}   
+
+.filter-form {
+    
+    width: 260px;
+}   
+           
