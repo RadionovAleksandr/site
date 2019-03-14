@@ -215,6 +215,8 @@ color: #283136;
     text-transform: uppercase; 
     color: #000000;
     font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .footer-contacts {
@@ -238,12 +240,6 @@ color: #283136;
     vertical-align: middle; 
 }
 
-.view-filter {
-background-color: #eeeeee;
-text-align: center;
-vertical-align: middle;
-
-}
 /*Флексбоксы*/
 
 .main-header {
@@ -387,32 +383,57 @@ vertical-align: middle;
 
  .main-title  {
     text-align: center;
-    font-size: 55;
-    
-    display: flex;
+    font-size: 55px;
     margin: 0 auto;
-    width: 500px;
-    margin-top: 85;
-    margin-bottom: 110;
+    width: 760px;
+    margin-top: 85px;
+    margin-bottom: 110px;
 }   
+
+.internal-page-main {
+    display: flex; 
+    margin: 0 auto;
+    width: 1200px;  
+    flex-wrap: wrap;
+}
 
 .filter-form {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    width: 260px;
+    margin-left: 20px; 
 }   
 
-fieldset:nth-of-type(1) {
-width: 260px;
-min-height: 205px;
-margin-bottom: 60px;
+.internal-page-main .filter-form fieldset:nth-of-type(1) {
+    width: 260px;
+    min-height: 205px;
+    margin-bottom: 60px;
 }
 
-fieldset:nth-of-type(2) {
+.internal-page-main .filter-form fieldset:nth-of-type(2) {
     width: 260px;
     margin-bottom: 60px;
     }
 
-fieldset:nth-of-type(3) {
+.internal-page-main .filter-form fieldset:nth-of-type(3) {
     width: 260px;
     margin-bottom: 50px;
     }    
+
+.internal-page-main .products {
+    display: flex;
+    flex-direction: column;
+}
+
+.internal-page-main .products .sorting {
+    width: 760px;
+}
+
+.internal-page-main .products .catalogs {
+    width: 760px; 
+}
+
+.internal-page-main .products .pagination-list {
+    width: 445px;
+}
+

@@ -3,31 +3,32 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Нёрдс</title>
+  <title>Nerds</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/nerds.css">
 </head>
 
 <body class="internal-page">
-    <header class="main-header">
-        <div class="main-header-logo">
-          <a>
-            <img src="img-nerds/nerds-logo.png" width="160" height="65" alt="Логотип Нёрдс" />
-          </a>
-        </div>
-        <nav class="main-navigation">
-          <a href="#.html">студия</a>
-          <a href="#.html">клиенты</a>
-          <a class="shop-navi" href="#.html">магазин</a>
-          <a href="#.html">контакты</a>
-        </nav>
-        <div class="basket">
-          <a href="#"><img src="img-nerds/cart-icon.png" alt="">корзина</a>
-        </div>
-      </header>
+  <header class="main-header">
+    <div class="main-header-logo">
+      <a>
+        <img src="img-nerds/nerds-logo.png" width="160" height="65" alt="Логотип Нёрдс" />
+      </a>
+    </div>
+    <nav class="main-navigation">
+      <a href="#.html">студия</a>
+      <a href="#.html">клиенты</a>
+      <a class="shop-navi" href="#.html">магазин</a>
+      <a href="#.html">контакты</a>
+    </nav>
+    <div class="basket">
+      <a href="#"><img src="img-nerds/cart-icon.png" alt="">корзина</a>
+    </div>
+  </header>
 
   <main>
-    <h1 class="main-title">Магазин готовых шаблонов</h1>
+      <h1 class="main-title">Магазин готовых шаблонов</h1>
+      <div class=".internal-page-main">
       <section class="filter">
         <h3 class="visually-hidden">Настройка фильтров</h3>
         <form class="filter-form" metod="get" action="#" oninput="corollary.value=range.value">
@@ -85,32 +86,38 @@
             </ul>
           </fieldset>
           <div class="btn-view-filter">
-          <a class="view-filter" href="#">показать</a>
-        </div>
+            <a class="view-filter" href="#">показать</a>
+          </div>
         </form>
       </section>
       <section class="products">
-          <h2 class="visually-hidden">Каталог шаблонов</h2>
-          <div class="sorting">
-            <p class="sorting-title">Cортировать:</p>
-            <div class="sorting-controls">
-              <button class="sorting-controls-item">По цене</button>
-              <button class="sorting-controls-item">По типу</button>
-              <button class="sorting-controls-item">По названию</button>
-              <div class="sorting-arrows">
-                <button class="arrow-down"><img src="img-nerds/icon-down-dir.png" alt="стрелка вниз"></button>
-                <button class="arrow-up"><img src="img-nerds/icon-up-dir.png" alt="стрелка вверх"></button>
-              </div>
+        <h2 class="visually-hidden">Каталог шаблонов</h2>
+        <div class="sorting">
+          <p class="sorting-title">Cортировать:</p>
+          <div class="sorting-controls">
+            <button class="sorting-controls-item">По цене</button>
+            <button class="sorting-controls-item">По типу</button>
+            <button class="sorting-controls-item">По названию</button>
+            <div class="sorting-arrows">
+              <button class="arrow-down"><img src="img-nerds/icon-down-dir.png" alt="стрелка вниз"></button>
+              <button class="arrow-up"><img src="img-nerds/icon-up-dir.png" alt="стрелка вверх"></button>
             </div>
           </div>
-          <div class="catalog">
-            <div><a href="#"><img src="img-nerds/browser-grey.png" alt=""><img src="img-nerds/img-sedona.jpg" alt="Седона"></a></div>
-            <div><a href="#"><img src="img-nerds/browser-grey.png" alt=""><img src="img-nerds/img-pink.jpg" alt="Пинк"></a></div>
-            <div><a href="#"><img src="img-nerds/browser-grey.png" alt=""><img src="img-nerds/img-barbershop.jpg" alt="Бородинский"></a></div>
-            <div><a href="#"><img src="img-nerds/browser-grey.png" alt=""><img src="img-nerds/img-mishka.jpg" alt="Мишка"></a></div>
-            <div><a href="#"><img src="img-nerds/browser-grey.png" alt=""><img src="img-nerds/img-aplus.jpg" alt="А+"></a></div>
-            <div><a href="#"><img src="img-nerds/browser-grey.png" alt=""><img src="img-nerds/img-kvast.jpg" alt="Кваст"></a></div>
+        </div>
+        <div class="catalog">
+          <div><a href="#"><img src="img-nerds/browser-grey.png" alt=""><img src="img-nerds/img-sedona.jpg"
+                alt="Седона"></a></div>
+          <div><a href="#"><img src="img-nerds/browser-grey.png" alt=""><img src="img-nerds/img-pink.jpg"
+                alt="Пинк"></a></div>
+          <div><a href="#"><img src="img-nerds/browser-grey.png" alt=""><img src="img-nerds/img-barbershop.jpg"
+                alt="Бородинский"></a></div>
+          <div><a href="#"><img src="img-nerds/browser-grey.png" alt=""><img src="img-nerds/img-mishka.jpg"
+                alt="Мишка"></a></div>
+          <div><a href="#"><img src="img-nerds/browser-grey.png" alt=""><img src="img-nerds/img-aplus.jpg" alt="А+"></a>
           </div>
+          <div><a href="#"><img src="img-nerds/browser-grey.png" alt=""><img src="img-nerds/img-kvast.jpg"
+                alt="Кваст"></a></div>
+        </div>
         <ul class="pagination-list">
           <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
           <li class="pagination-item"><a>2</a></li>
@@ -118,49 +125,50 @@
           <li class="pagination-item next"><a href="#">следующая</a></li>
         </ul>
       </section>
+    </div>
   </main>
   <footer class="main-footer">
-      <div class="footer-map">
-        <a href="map.html"><img src="img-nerds/Map.jpg" alt="Карта"></a>
-  
-        <div class="footer-contacts">
-          <p><b>Nerds design studio</b></p>
-          <p>191186, Санкт петербург,<br> ул.Б.Конюшенная, д. 19/8</p>
-          <p> тел. +7 (812) 275-75-75</p>
-          <p><a class="main-footer-window" href="#">напишите нам</a></p>
-        </div>
+    <div class="footer-map">
+      <a href="map.html"><img src="img-nerds/Map.jpg" alt="Карта"></a>
+
+      <div class="footer-contacts">
+        <p><b>Nerds design studio</b></p>
+        <p>191186, Санкт петербург,<br> ул.Б.Конюшенная, д. 19/8</p>
+        <p> тел. +7 (812) 275-75-75</p>
+        <p><a class="main-footer-window" href="#">напишите нам</a></p>
       </div>
-      <div class="footer-down">
-        <div class="footer-social-web">
-          <div><a class="social-button" href="#"><img src="img-nerds/vk.png" alt="вконтакте"></a></div>
-          <div><a class="social-button" href="#"><img src="img-nerds/fb-icon.png" alt="фейсбук"></a></div>
-          <div><a class="social-button" href="#"><img src="img-nerds/insta-icon.png" alt="инстаграмм"></a></div>
-        </div>
-        <div class="footer-social">
-          <b>Давайте дружить, это выгодно!</b><br>
-          <p><span>Скидка 10% для друзей из социальных сетей.</span></p>
-        </div>
-  
+    </div>
+    <div class="footer-down">
+      <div class="footer-social-web">
+        <div><a class="social-button" href="#"><img src="img-nerds/vk.png" alt="вконтакте"></a></div>
+        <div><a class="social-button" href="#"><img src="img-nerds/fb-icon.png" alt="фейсбук"></a></div>
+        <div><a class="social-button" href="#"><img src="img-nerds/insta-icon.png" alt="инстаграмм"></a></div>
       </div>
-    </footer>
-    <section class="modal modal-login">
-      <h2>Напишите нам</h2>
-      <form class="login-form" action="#" method="post">
-        <p>
-          <label class="visually-hidden" for="user-login">Ваше имя</label>
-          <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Представтесь, пожалуйста">
-        </p>
-        <p>
-          <label class="visually-hidden" for="user-email">Ваш e-mail</label>
-          <input class="login-icon-password" id="user-email" type="email" name="email" placeholder="Для отправки ответа">
-        </p>
-        <p class="text-area">
-          <label for="textarea">Текст письма</label>
-          <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-        </p>
-        <a class="button-m-w" href="#">Отправить</a>
-      </form>
-    </section>
-  </body>
-  
-  </html>
+      <div class="footer-social">
+        <b>Давайте дружить, это выгодно!</b><br>
+        <p><span>Скидка 10% для друзей из социальных сетей.</span></p>
+      </div>
+
+    </div>
+  </footer>
+  <section class="modal modal-login">
+    <h2>Напишите нам</h2>
+    <form class="login-form" action="#" method="post">
+      <p>
+        <label class="visually-hidden" for="user-login">Ваше имя</label>
+        <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Представтесь, пожалуйста">
+      </p>
+      <p>
+        <label class="visually-hidden" for="user-email">Ваш e-mail</label>
+        <input class="login-icon-password" id="user-email" type="email" name="email" placeholder="Для отправки ответа">
+      </p>
+      <p class="text-area">
+        <label for="textarea">Текст письма</label>
+        <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+      </p>
+      <a class="button-m-w" href="#">Отправить</a>
+    </form>
+  </section>
+</body>
+
+</html>
