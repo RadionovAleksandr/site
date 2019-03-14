@@ -1,0 +1,378 @@
+@font-face {
+	font-family: 'roboto';
+	src: local('roboto'),
+	     url('nerds/fonts/roboto.woff2') format('woff2'),
+	     url('nerds/fonts/roboto.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+body {
+margin: 0;
+padding: 0;
+
+font-family: 'roboto', "Arial", sans-serif;
+font-size: 16px;
+line-height: 24px;
+font-weight: normal;
+color: #283136;
+text-align: left; 
+
+background-image: url("../img-nerds/backgroundnerds.png");  /* норм решение с картинкой фоном? */
+background-color: white;
+background-position: top center;
+background-repeat: no-repeat;
+}
+
+.next {
+    text-transform: uppercase;
+}
+
+.pagination-item a {
+    color: #000000;
+}
+
+a {
+text-decoration: none;
+}
+
+hr {
+    width: 1160px;
+    margin: 0 auto;
+    color: #283136;
+}
+
+.main-navigation a,
+.basket a {
+    color: #000000;
+    background-color: #eeeeee;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+.slider-buton, 
+.visually-hidden {
+   display: none; 
+}
+
+/*Прописываю состояние ссылок в соответствии со стайлгадом, не выглядит ли это громоздко? 
+Дальше будет больше) */
+
+.main-navigation a:hover,
+.main-navigation a:focus,
+.basket a:hover,
+.basket a:focus {
+    color: #fb565a;
+}
+
+.main-navigation a:active,
+.basket a:active {
+    color: rgba(0, 0, 0, 0.3)
+}
+
+.shop-navi {
+ border-bottom: 2px solid #fb565a ;
+}
+
+Legend.range,
+.sorting-title,
+legend.grid,
+legend.features {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.features-ul,
+.grid-ul,
+.cost {
+list-style: none;
+}
+
+.slider h1 {
+    font-size: 55px;
+    line-height: 55px;
+    background-color: #eeeeee;
+}
+
+
+.advantegs-a {
+    color: white;
+    background-color: #fb565a;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+.advantegs-a:hover,
+.advantegs-a:focus,
+.web-sites-order:hover,
+.web-sites-order:focus,
+.main-footer-window:hover,
+.main-footer-window:focus,
+.button-m-w:hover,
+.button-m-w:focus {
+background-color: #e74246;
+}
+
+.service h2 {
+    color: #000000;
+    text-transform: uppercase;
+}
+.service a {
+    color: white;
+    text-transform: uppercase; 
+    font-weight: bold;
+}
+
+.web-sites-order {
+    background-color: #fb565a;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.applications-order:hover,
+.applications-order:focus {
+    background-color: #00ca74;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.applications-order { 
+    background-color: #00bc6c;
+}
+
+.presentation-order:hover,
+.presentation-order:focus {
+    background-color: #eab534;
+}
+
+.presentation-order {
+    background-color: #efc849;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.advantegs-a:active,
+.web-sites-order:active,
+.main-footer-window:active,
+.button-m-w:active,
+.presentation-order:active {
+color: rgba(255, 255, 255, 0.3);
+}
+
+.information b {
+    font-size: 45px; 
+    line-height: 45px;
+}
+
+.defis {
+    color: #fb565a;
+}
+
+.information strong {
+    text-transform: uppercase; 
+}
+
+.counter .counter-b {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 45px;
+    margin-top: 35px;
+}
+
+.percent {
+    font-size: 28px;   
+}
+
+.table tr {
+    height: 50px;
+}
+
+/*Как я могу сократить каскадность в офомлении таблиц?*/
+
+.table tr th {
+    width: 120px;
+}
+
+.table tr:nth-of-type(2) {
+color: #283136;
+}
+
+.table table tr:nth-of-type(1) {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.view-filter {
+    background-color: #eeeeee;
+    text-transform: uppercase; 
+    color: #000000;
+}
+
+.footer-contacts {
+    background-color: white;
+}
+
+.footer-contacts b {
+    font-size: 18px;
+    text-transform: uppercase; 
+}
+
+.footer-social b {
+    font-size: 36px;
+}
+
+.main-footer-window,
+.button-m-w {
+    color: white;
+    background-color: #fb565a;
+    text-align: center;
+    vertical-align: middle; 
+}
+
+/*Флексбоксы*/
+
+.main-header {
+    display: flex;
+    width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    background-color: #eeeeee; 
+    justify-content: flex-start;
+}
+
+.main-header .main-header-logo {
+    width: 160px;
+    margin-left: 140px; 
+}
+
+.main-header .main-navigation {
+    width: 460px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto 0;
+    margin-left: 180px;
+}
+
+.main-header .basket {
+    width: 140px;
+    margin: auto 0;
+    margin-left: 240px;
+}
+
+.slider {
+    width: 1440px;
+    display: flex; 
+    padding: 0;
+    margin: 0 auto;
+    justify-content: space-between;
+    background-color: #eeeeee;
+    margin-bottom: 85px;
+}
+
+.slider .slider-text {
+    width: 420px;
+    padding-top: 70px;
+    margin-left: 140px;
+}
+
+.slider .slider-img {
+    width: 697px;
+    margin-right: 180px; 
+    padding: 0;
+}
+
+.service-box {
+    width: 1200px;
+    display: flex; 
+    margin: 0 auto;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.web-sites {
+    margin-left: 20px;
+}
+
+.presentation {
+    margin-right: 80px;
+}
+
+.line-hr {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.information {
+    width: 1200px;
+    display: flex; 
+    margin: 0 auto;
+    justify-content: space-between;
+    background-color: white; 
+}
+
+.about-us {
+    width: 700px;
+    margin-left: 20px;
+}
+
+.counter {
+    width: 360px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.table {
+    align-self: center;
+}
+
+.works-up-hr {
+    margin-top: 80px;  
+    margin-bottom: 45px;  
+}
+
+.works-down-hr {
+    margin-top: 45px; 
+    margin-bottom: 85px;
+}
+
+.works {
+    display: flex;
+    width: 1100px;
+    margin: 0 auto;
+    justify-content: space-between;
+    background-color: white;  
+}
+
+.footer-map {
+    width: 1440px;
+    margin: 0 auto;
+    justify-content: space-between;
+    background-color: white; 
+}
+
+.footer-down {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    background-color: white; 
+}
+
+.footer-social {
+    order: 1;
+    flex-direction: column;
+    width: 580px;
+    margin-left: 140px;
+}   
+.footer-social-web {
+    order: -1;
+    display: flex;
+    margin-left: 20px;
+    width: 260px;
+    justify-content: space-between;
+}                       
