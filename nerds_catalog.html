@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Nerds</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/nerds.css">
 </head>
@@ -28,12 +29,12 @@
 
   <main>
       <h1 class="main-title">Магазин готовых шаблонов</h1>
-      <div class=".internal-page-main">
+      <div class="internal-page-main">
       <section class="filter">
         <h3 class="visually-hidden">Настройка фильтров</h3>
         <form class="filter-form" metod="get" action="#" oninput="corollary.value=range.value">
           <fieldset>
-            <Legend><label class="range" for="range">Стоимость(*JS)</label></Legend>
+            <Legend><label class="range" for="range">Стоимость:(*JS)</label></Legend>
             <ul class="cost">
               <li class="filter-option">
                 <label for="range"></label>
@@ -43,7 +44,7 @@
             </ul>
           </fieldset>
           <fieldset>
-            <legend class="grid">сетка</legend>
+            <legend class="grid">сетка:</legend>
             <ul class="grid-ul">
               <li class="filter-option">
                 <input id="adaptv-button" class="invis filter-option-radio" type="radio" name="product-group"
@@ -61,7 +62,7 @@
             </ul>
           </fieldset>
           <fieldset>
-            <legend class="features">особенности</legend>
+            <legend class="features">особенности:</legend>
             <ul class="features-ul">
               <li class="filter-option">
                 <input id="slaider-button" class="invis filter-option-checkbox" type="checkbox" name="slaider">
@@ -93,7 +94,9 @@
       <section class="products">
         <h2 class="visually-hidden">Каталог шаблонов</h2>
         <div class="sorting">
-          <p class="sorting-title">Cортировать:</p>
+          <div class="sorting-title">
+           <p>Cортировать:</p>
+          </div>
           <div class="sorting-controls">
             <button class="sorting-controls-item">По цене</button>
             <button class="sorting-controls-item">По типу</button>

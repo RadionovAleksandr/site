@@ -1,32 +1,24 @@
-@font-face {
-	font-family: 'roboto';
-	src: local('roboto'),
-	     url('nerds/fonts/roboto.woff2') format('woff2'),
-	     url('nerds/fonts/roboto.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
 
 
 body {
-margin: 0;
-padding: 0;
-
-font-family: 'roboto', "Arial", sans-serif;
-font-size: 16px;
-line-height: 24px;
-font-weight: normal;
-color: #283136;
-text-align: left; 
-
-background-image: url("../img-nerds/backgroundnerds.png");  /* норм решение с картинкой фоном? */
-background-color: white;
-background-position: top center;
-background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #283136;
+    text-align: left;
+    background-image: url("../img-nerds/backgroundnerds.png");
+    /* норм решение с картинкой фоном? */
+    background-color: white;
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 
 body.internal-page {
-    background-image: url("../img-nerds/grey-back-inernal.png");  /* норм решение с картинкой фоном? */   
+    background-image: url("../img-nerds/grey-back-inernal.png");
+    /* норм решение с картинкой фоном? */
 }
 
 .next {
@@ -38,7 +30,7 @@ body.internal-page {
 }
 
 a {
-text-decoration: none;
+    text-decoration: none;
 }
 
 hr {
@@ -47,52 +39,43 @@ hr {
     color: #283136;
 }
 
-.main-navigation a,
-.basket a {
+.main-navigation a, .basket a {
     color: #000000;
     background-color: #eeeeee;
     font-weight: bold;
     text-transform: uppercase;
-    
 }
 
-.slider-buton, 
+.slider-buton,
+/*спрятал кнопки слайдера и скрытые заголовки*/
+
 .visually-hidden {
-   display: none; 
+    display: none;
 }
 
 /*Прописываю состояние ссылок в соответствии со стайлгадом, не выглядит ли это громоздко? 
 Дальше будет больше) */
 
-.main-navigation a:hover,
-.main-navigation a:focus,
-.basket a:hover,
-.basket a:focus {
+.main-navigation a:hover, .main-navigation a:focus, .basket a:hover, .basket a:focus {
     color: #fb565a;
 }
 
-.main-navigation a:active,
-.basket a:active {
+.main-navigation a:active, .basket a:active {
     color: rgba(0, 0, 0, 0.3)
 }
 
 .shop-navi {
- border-bottom: 2px solid #fb565a ;
+    border-bottom: 2px solid #fb565a;
 }
 
-Legend.range,
-.sorting-title,
-legend.grid,
-legend.features {
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: bold;
+label.range, .sorting-title, legend.grid, legend.features {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-.features-ul,
-.grid-ul,
-.cost {
-list-style: none;
+.features-ul, .grid-ul, .cost {
+    list-style: none;
 }
 
 .slider h1 {
@@ -100,7 +83,6 @@ list-style: none;
     line-height: 55px;
     background-color: #eeeeee;
 }
-
 
 .advantegs-a {
     color: white;
@@ -110,24 +92,18 @@ list-style: none;
     text-transform: uppercase;
 }
 
-.advantegs-a:hover,
-.advantegs-a:focus,
-.web-sites-order:hover,
-.web-sites-order:focus,
-.main-footer-window:hover,
-.main-footer-window:focus,
-.button-m-w:hover,
-.button-m-w:focus {
-background-color: #e74246;
+.advantegs-a:hover, .advantegs-a:focus, .web-sites-order:hover, .web-sites-order:focus, .main-footer-window:hover, .main-footer-window:focus, .button-m-w:hover, .button-m-w:focus {
+    background-color: #e74246;
 }
 
 .service h2 {
     color: #000000;
     text-transform: uppercase;
 }
+
 .service a {
     color: white;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     font-weight: bold;
 }
 
@@ -137,19 +113,17 @@ background-color: #e74246;
     vertical-align: middle;
 }
 
-.applications-order:hover,
-.applications-order:focus {
+.applications-order:hover, .applications-order:focus {
     background-color: #00ca74;
     text-align: center;
     vertical-align: middle;
 }
 
-.applications-order { 
+.applications-order {
     background-color: #00bc6c;
 }
 
-.presentation-order:hover,
-.presentation-order:focus {
+.presentation-order:hover, .presentation-order:focus {
     background-color: #eab534;
 }
 
@@ -159,16 +133,12 @@ background-color: #e74246;
     vertical-align: middle;
 }
 
-.advantegs-a:active,
-.web-sites-order:active,
-.main-footer-window:active,
-.button-m-w:active,
-.presentation-order:active {
-color: rgba(255, 255, 255, 0.3);
+.advantegs-a:active, .web-sites-order:active, .main-footer-window:active, .button-m-w:active, .presentation-order:active {
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .information b {
-    font-size: 45px; 
+    font-size: 45px;
     line-height: 45px;
 }
 
@@ -177,7 +147,7 @@ color: rgba(255, 255, 255, 0.3);
 }
 
 .information strong {
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
 .counter .counter-b {
@@ -188,7 +158,7 @@ color: rgba(255, 255, 255, 0.3);
 }
 
 .percent {
-    font-size: 28px;   
+    font-size: 28px;
 }
 
 .table tr {
@@ -202,7 +172,7 @@ color: rgba(255, 255, 255, 0.3);
 }
 
 .table tr:nth-of-type(2) {
-color: #283136;
+    color: #283136;
 }
 
 .table table tr:nth-of-type(1) {
@@ -212,7 +182,7 @@ color: #283136;
 
 .view-filter {
     background-color: #eeeeee;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     color: #000000;
     font-weight: bold;
     text-align: center;
@@ -225,20 +195,23 @@ color: #283136;
 
 .footer-contacts b {
     font-size: 18px;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
 .footer-social b {
     font-size: 36px;
 }
 
-.main-footer-window,
-.button-m-w {
+.main-footer-window, .button-m-w {
     color: white;
     background-color: #fb565a;
     text-align: center;
-    vertical-align: middle; 
+    vertical-align: middle;
 }
+
+fieldset {
+    border:0 none;
+ }
 
 /*Флексбоксы*/
 
@@ -248,13 +221,13 @@ color: #283136;
     margin: 0 auto;
     margin-bottom: 20px;
     margin-top: 50px;
-    background-color: #eeeeee; 
+    background-color: #eeeeee;
     justify-content: flex-start;
 }
 
 .main-header .main-header-logo {
     width: 160px;
-    margin-left: 140px; 
+    margin-left: 140px;
 }
 
 .main-header .main-navigation {
@@ -273,7 +246,7 @@ color: #283136;
 
 .slider {
     width: 1440px;
-    display: flex; 
+    display: flex;
     padding: 0;
     margin: 0 auto;
     justify-content: space-between;
@@ -289,13 +262,13 @@ color: #283136;
 
 .slider .slider-img {
     width: 697px;
-    margin-right: 180px; 
+    margin-right: 180px;
     padding: 0;
 }
 
 .service-box {
     width: 1200px;
-    display: flex; 
+    display: flex;
     margin: 0 auto;
     justify-content: space-between;
     background-color: white;
@@ -316,10 +289,10 @@ color: #283136;
 
 .information {
     width: 1200px;
-    display: flex; 
+    display: flex;
     margin: 0 auto;
     justify-content: space-between;
-    background-color: white; 
+    background-color: white;
 }
 
 .about-us {
@@ -339,12 +312,12 @@ color: #283136;
 }
 
 .works-up-hr {
-    margin-top: 80px;  
-    margin-bottom: 45px;  
+    margin-top: 80px;
+    margin-bottom: 45px;
 }
 
 .works-down-hr {
-    margin-top: 45px; 
+    margin-top: 45px;
     margin-bottom: 85px;
 }
 
@@ -353,56 +326,62 @@ color: #283136;
     width: 1100px;
     margin: 0 auto;
     justify-content: space-between;
-    background-color: white;  
+    background-color: white;
 }
 
 .footer-map {
     width: 1440px;
     margin: 0 auto;
     justify-content: space-between;
-    background-color: white; 
+    background-color: white;
 }
 
 .footer-down {
     display: flex;
     width: 1200px;
     margin: 0 auto;
-    background-color: white; 
+    background-color: white;
 }
 
 .footer-social {
     width: 580px;
     margin-left: 140px;
-}   
+}
+
 .footer-social-web {
     display: flex;
     margin-left: 20px;
     width: 260px;
     justify-content: space-between;
-} 
+}
 
- .main-title  {
+.main-title {
     text-align: center;
     font-size: 55px;
     margin: 0 auto;
     width: 760px;
-    margin-top: 85px;
-    margin-bottom: 110px;
-}   
+    padding-top: 85px;
+    padding-bottom: 110px;
+}
 
 .internal-page-main {
-    display: flex; 
+    display: flex;
     margin: 0 auto;
-    width: 1200px;  
-    flex-wrap: wrap;
+    margin-top: 60px;
+    width: 1200px;
 }
 
 .filter-form {
     display: flex;
     flex-direction: column;
     width: 260px;
-    margin-left: 20px; 
-}   
+    margin-left: 20px;
+}
+
+.filter-form fieldset {
+    padding: 0;
+    margin: 0;
+}
 
 .internal-page-main .filter-form fieldset:nth-of-type(1) {
     width: 260px;
@@ -413,16 +392,34 @@ color: #283136;
 .internal-page-main .filter-form fieldset:nth-of-type(2) {
     width: 260px;
     margin-bottom: 60px;
-    }
+}
 
 .internal-page-main .filter-form fieldset:nth-of-type(3) {
     width: 260px;
     margin-bottom: 50px;
-    }    
+}
+
+fieldset ul,
+legend ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+fieldset ul:nth-of-type(1) {
+    margin-top: 60px;
+}
+
+fieldset ul:nth-of-type(2),
+fieldset ul:nth-of-type(3) {
+    margin-top: 30px;
+}
 
 .internal-page-main .products {
     display: flex;
     flex-direction: column;
+    margin-right: 20px;
+    margin-left: 140px;
 }
 
 .internal-page-main .products .sorting {
@@ -430,10 +427,66 @@ color: #283136;
 }
 
 .internal-page-main .products .catalogs {
-    width: 760px; 
+    width: 760px;
 }
 
 .internal-page-main .products .pagination-list {
     width: 445px;
 }
 
+.sorting {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sorting-controls {
+    display: flex;
+}
+
+.sorting .sorting-title {
+    width: 360px;
+}
+
+.sorting-title p {
+    margin-top: 0px;
+}
+
+.sorting .sorting-controls {
+    width: 360px;
+}
+
+.sorting-controls .sorting-controls-item {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-transform: uppercase;
+}
+
+.sorting-arrows button {
+    padding: 0;
+    border: 0;
+    margin: auto 9 px;
+}
+
+.sorting-arrows {
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 43px;
+}
+
+.arrow-down, .arrow-up {
+    margin: auto 0;
+}
+
+.products .catalog {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.catalog div a {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
