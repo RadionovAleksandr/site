@@ -9,17 +9,12 @@ body {
     font-weight: normal;
     color: #283136;
     text-align: left;
-    background-image: url("../img-nerds/backgroundnerds.png");
-    /* норм решение с картинкой фоном? */
+   
     background-color: white;
     background-position: top center;
     background-repeat: no-repeat;
 }
 
-body.internal-page {
-    background-image: url("../img-nerds/grey-back-inernal.png");
-    /* норм решение с картинкой фоном? */
-}
 
 .next {
     text-transform: uppercase;
@@ -218,15 +213,15 @@ fieldset {
 .main-header {
     display: flex;
     width: 1440px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    margin-top: 50px;
+    height: 200px;
+    margin: auto;
     background-color: #eeeeee;
     justify-content: flex-start;
 }
 
 .main-header .main-header-logo {
     width: 160px;
+    margin: auto 0;
     margin-left: 140px;
 }
 
@@ -358,10 +353,10 @@ fieldset {
 .main-title {
     text-align: center;
     font-size: 55px;
-    margin: 0 auto;
-    width: 760px;
-    padding-top: 85px;
-    padding-bottom: 110px;
+    margin: auto;
+    width: 1440px;
+    height: 150px;
+    background-color: #eeeeee;
 }
 
 .internal-page-main {
@@ -439,6 +434,10 @@ fieldset ul:nth-of-type(3) {
     justify-content: space-between;
 }
 
+.sorting-controls button,
+.sorting-arrows button {
+    background-color: white;
+}
 .sorting-controls {
     display: flex;
 }
