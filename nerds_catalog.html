@@ -28,8 +28,8 @@
   </header>
 
   <main>
-      <h1 class="main-title">Магазин готовых шаблонов</h1>
-      <div class="internal-page-main">
+    <h1 class="main-title">Магазин готовых шаблонов</h1>
+    <div class="internal-page-main">
       <section class="filter">
         <h3 class="visually-hidden">Настройка фильтров</h3>
         <form class="filter-form" metod="get" action="#" oninput="corollary.value=range.value">
@@ -87,7 +87,7 @@
             </ul>
           </fieldset>
           <div class="btn-view-filter">
-            <a class="view-filter" href="#">показать</a>
+            <a class="view-filter button" href="#">показать</a>
           </div>
         </form>
       </section>
@@ -95,7 +95,7 @@
         <h2 class="visually-hidden">Каталог шаблонов</h2>
         <div class="sorting">
           <div class="sorting-title">
-           <p>Cортировать:</p>
+            <p>Cортировать:</p>
           </div>
           <div class="sorting-controls">
             <button class="sorting-controls-item">По цене</button>
@@ -108,18 +108,54 @@
           </div>
         </div>
         <div class="catalog">
-          <div><a href="#"><img src="img-nerds/browser-grey.png" alt=""><img src="img-nerds/img-sedona.jpg"
-                alt="Седона"></a></div>
-          <div><a href="#"><img src="img-nerds/browser-grey.png" alt=""><img src="img-nerds/img-pink.jpg"
-                alt="Пинк"></a></div>
-          <div><a href="#"><img src="img-nerds/browser-grey.png" alt=""><img src="img-nerds/img-barbershop.jpg"
-                alt="Бородинский"></a></div>
-          <div><a href="#"><img src="img-nerds/browser-grey.png" alt=""><img src="img-nerds/img-mishka.jpg"
-                alt="Мишка"></a></div>
-          <div><a href="#"><img src="img-nerds/browser-grey.png" alt=""><img src="img-nerds/img-aplus.jpg" alt="А+"></a>
+          <div class="card-sedona"><a href="#"><img class="browser-img" src="img-nerds/browser.png" alt=""><img
+                src="img-nerds/img-sedona.jpg" alt="Седона"></a>
+            <div class="modal-price">
+              <b>SEDONA</b>
+              <p>Информационный сайт<br>для туристов</p>
+              <a class="button button-price" href="#">9 900 РУБ</a>
+            </div>
           </div>
-          <div><a href="#"><img src="img-nerds/browser-grey.png" alt=""><img src="img-nerds/img-kvast.jpg"
-                alt="Кваст"></a></div>
+          <div class="card-pink"><a href="#"><img class="browser-img" src="img-nerds/browser.png" alt=""><img
+                src="img-nerds/img-pink.jpg" alt="Пинк"></a>
+                <div class="modal-price">
+                    <b>SEDONA</b>
+                    <p>Информационный сайт<br>для туристов</p>
+                    <a class="button button-price" href="#">9 900 РУБ</a>
+                  </div>
+          </div>
+          <div class="card-borodinskiy"><a href="#"><img class="browser-img" src="img-nerds/browser.png" alt=""><img
+                src="img-nerds/img-barbershop.jpg" alt="Бородинский"></a>
+                <div class="modal-price">
+                    <b>SEDONA</b>
+                    <p>Информационный сайт<br>для туристов</p>
+                    <a class="button button-price" href="#">9 900 РУБ</a>
+                  </div>
+          </div>
+          <div class="card-mishka"><a href="#"><img class="browser-img" src="img-nerds/browser.png" alt=""><img
+                src="img-nerds/img-mishka.jpg" alt="Мишка"></a>
+                <div class="modal-price">
+                    <b>SEDONA</b>
+                    <p>Информационный сайт<br>для туристов</p>
+                    <a class="button button-price" href="#">9 900 РУБ</a>
+                  </div>
+          </div>
+          <div class="card-A"><a href="#"><img class="browser-img" src="img-nerds/browser.png" alt=""><img
+                src="img-nerds/img-aplus.jpg" alt="А+"></a>
+                <div class="modal-price">
+                    <b>SEDONA</b>
+                    <p>Информационный сайт<br>для туристов</p>
+                    <a class="button button-price" href="#">9 900 РУБ</a>
+                  </div>
+          </div>
+          <div class="card-kvast"><a href="#"><img class="browser-img" src="img-nerds/browser.png" alt=""><img
+                src="img-nerds/img-kvast.jpg" alt="Кваст"></a>
+                <div class="modal-price">
+                    <b>SEDONA</b>
+                    <p>Информационный сайт<br>для туристов</p>
+                    <a class="button button-price" href="#">9 900 РУБ</a>
+                  </div>
+          </div>
         </div>
         <ul class="pagination-list">
           <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
@@ -138,7 +174,7 @@
         <p><b>Nerds design studio</b></p>
         <p>191186, Санкт петербург,<br> ул.Б.Конюшенная, д. 19/8</p>
         <p> тел. +7 (812) 275-75-75</p>
-        <p><a class="main-footer-window" href="#">напишите нам</a></p>
+        <p><a class="main-footer-window button" href="#">напишите нам</a></p>
       </div>
     </div>
     <div class="footer-down">
@@ -157,19 +193,20 @@
   <section class="modal modal-login">
     <h2>Напишите нам</h2>
     <form class="login-form" action="#" method="post">
-      <p>
-        <label class="visually-hidden" for="user-login">Ваше имя</label>
+      <fieldset class="user-name">
+        <legend><label class="" for="user-login"><b>Ваше имя:</b></label></legend>
         <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Представтесь, пожалуйста">
-      </p>
-      <p>
-        <label class="visually-hidden" for="user-email">Ваш e-mail</label>
+      </fieldset>
+      <button class="close">X</button>
+      <fieldset class="user-mail">
+        <legend><label class="" for="user-email"><b>Ваш e-mail:</b></label></legend>
         <input class="login-icon-password" id="user-email" type="email" name="email" placeholder="Для отправки ответа">
-      </p>
-      <p class="text-area">
-        <label for="textarea">Текст письма</label>
+      </fieldset>
+      <fieldset class="text-area">
+        <legend><label for="textarea"><b>Текст письма:</b></label></legend>
         <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-      </p>
-      <a class="button-m-w" href="#">Отправить</a>
+      </fieldset>
+      <a class="button-m-w button" href="#">Отправить</a>
     </form>
   </section>
 </body>

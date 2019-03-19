@@ -1,6 +1,6 @@
-
-
 body {
+    position: relative;
+    width: 1440px;
     margin: 0;
     padding: 0;
     font-family: 'roboto', "Arial", sans-serif;
@@ -9,12 +9,10 @@ body {
     font-weight: normal;
     color: #283136;
     text-align: left;
-   
     background-color: white;
     background-position: top center;
     background-repeat: no-repeat;
 }
-
 
 .next {
     text-transform: uppercase;
@@ -32,6 +30,17 @@ hr {
     width: 1160px;
     margin: 0 auto;
     color: #283136;
+}
+
+.button {
+    display: inline-block;
+    padding: 17px 40px;
+    border-radius: 5px;
+    margin-top: 12px;
+}
+
+.advantegs-a.button {
+    margin-top: 45px;
 }
 
 .main-navigation a, .basket a {
@@ -193,6 +202,69 @@ label.range, .sorting-title, legend.grid, legend.features {
     text-transform: uppercase;
 }
 
+.browser-img {
+    opacity: 0.12;
+}
+
+.card-sedona,
+.card-pink,
+.card-borodinskiy,
+.card-mishka,
+.card-A,
+.card-kvast {
+    position: relative;
+}
+
+.modal-price {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 360px;
+    text-align: center;
+    background-color: #eeeeee;
+}
+
+.modal-price b {
+    display: block;
+font-size: 18px;
+color: black;
+padding-top: 35px;
+}
+
+.modal-price p {
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+    margin-top: 24px;
+}
+
+.button-price {
+background-color:  #fb565a;
+color: white;
+margin: 0 65px;
+margin-top: 35px;
+margin-bottom: 40px;
+}
+
+.card-sedona:hover .modal-price,
+.card-pink:hover .modal-price,
+.card-borodinskiy:hover .modal-price,
+.card-mishka:hover .modal-price,
+.card-A:hover .modal-price,
+.card-kvast:hover .modal-price {
+    display: block;
+}
+
+.card-sedona:hover .browser-img,
+.card-pink:hover .browser-img,
+.card-borodinskiy:hover .browser-img,
+.card-mishka:hover .browser-img,
+.card-A:hover .browser-img,
+.card-kvast:hover .browser-img {
+    opacity: 1;
+}
+
 .footer-social b {
     font-size: 36px;
 }
@@ -205,8 +277,109 @@ label.range, .sorting-title, legend.grid, legend.features {
 }
 
 fieldset {
-    border:0 none;
- }
+    border: 0 none;
+}
+
+.pagination-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.pagination-list .pagination-item {
+    padding: 10px 18px;
+    background-color: #eeeeee;
+    border: 3px solid #eeeeee;
+    margin-right: 10px;
+    margin-top: 60px;
+    margin-bottom: 65px;
+}
+
+.pagination-list .pagination-item-current {
+    background-color: white;
+}
+
+.pagination-list .next {
+    border-radius: 5px;
+    padding: 10px 78px;
+}
+
+.footer-map {
+    position: relative;
+}
+
+.footer-contacts {
+    position: absolute;
+    top: 50px;
+    left: 140px;
+    width: 320px;
+    text-align: center;
+}
+
+.footer-contacts p:first-of-type {
+    margin-top: 53px;
+    margin-bottom: 0;
+}
+
+.footer-contacts p:nth-of-type(2) {
+    margin-top: 26px;
+    margin-bottom: 12px;
+    line-height: 18px;
+}
+
+.footer-contacts p:nth-of-type(3) {
+    margin: 0;
+}
+
+.footer-contacts .main-footer-window {
+    margin-bottom: 33px;
+    margin-top: 20px;
+}
+
+.footer-contacts a {
+    padding: 13px 50px
+}
+
+.modal.modal-login {
+    position: absolute;
+    left: 240px;
+    bottom: 180px;
+    width: 780px;
+    padding: 70px 100px;
+    box-shadow: 0 15px 60px black;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.user-mail input, 
+.user-name input {
+    box-sizing: border-box;
+    width: 360px;
+    border: 2px solid #eeeeee;
+    border-radius: 3px;
+}
+
+.text-area textarea {
+    box-sizing: border-box;
+    width: 720px;
+    border: 2px solid #eeeeee;
+    border-radius: 3px;
+}
+
+.close {
+    margin-left: 380px;
+}
+
+.login-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal-login fieldset {
+    padding: 0;
+    margin: 0;
+}
 
 /*Флексбоксы*/
 
@@ -251,7 +424,6 @@ fieldset {
 
 .slider .slider-text {
     width: 420px;
-    padding-top: 70px;
     margin-left: 140px;
 }
 
@@ -394,8 +566,7 @@ fieldset {
     margin-bottom: 50px;
 }
 
-fieldset ul,
-legend ul {
+fieldset ul, legend ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -405,8 +576,7 @@ fieldset ul:nth-of-type(1) {
     margin-top: 60px;
 }
 
-fieldset ul:nth-of-type(2),
-fieldset ul:nth-of-type(3) {
+fieldset ul:nth-of-type(2), fieldset ul:nth-of-type(3) {
     margin-top: 30px;
 }
 
@@ -434,10 +604,10 @@ fieldset ul:nth-of-type(3) {
     justify-content: space-between;
 }
 
-.sorting-controls button,
-.sorting-arrows button {
+.sorting-controls button, .sorting-arrows button {
     background-color: white;
 }
+
 .sorting-controls {
     display: flex;
 }
@@ -464,7 +634,7 @@ fieldset ul:nth-of-type(3) {
 .sorting-arrows button {
     padding: 0;
     border: 0;
-    margin: auto 9 px;
+    margin: auto 9px;
 }
 
 .sorting-arrows {
