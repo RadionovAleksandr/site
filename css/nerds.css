@@ -1,6 +1,4 @@
 body {
-    position: relative;
-    width: 1440px;
     margin: 0;
     padding: 0;
     font-family: 'roboto', "Arial", sans-serif;
@@ -10,12 +8,16 @@ body {
     color: #283136;
     text-align: left;
     background-color: white;
-    background-position: top center;
-    background-repeat: no-repeat;
 }
 
-.next {
-    text-transform: uppercase;
+fieldset {
+    border: none;
+}
+
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .pagination-item a {
@@ -36,186 +38,143 @@ hr {
     display: inline-block;
     padding: 17px 40px;
     border-radius: 5px;
-    margin-top: 12px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
 }
 
-.advantegs-a.button {
-    margin-top: 45px;
-}
-
-.main-navigation a, .basket a {
+.header__navigation a, .header__basket a {
     color: #000000;
     background-color: #eeeeee;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.slider-buton,
 /*спрятал кнопки слайдера и скрытые заголовки*/
 
-.visually-hidden {
+.slider-container__btn, .visually-hidden {
     display: none;
 }
 
-/*Прописываю состояние ссылок в соответствии со стайлгадом, не выглядит ли это громоздко? 
-Дальше будет больше) */
-
-.main-navigation a:hover, .main-navigation a:focus, .basket a:hover, .basket a:focus {
+.header__navigation a:hover, .header__navigation a:focus, .header__basket a:hover, .header__basket a:focus {
     color: #fb565a;
 }
 
-.main-navigation a:active, .basket a:active {
+.header__navigation a:active, .header__basket a:active {
     color: rgba(0, 0, 0, 0.3)
 }
 
-.shop-navi {
+.header__navigation_active {
     border-bottom: 2px solid #fb565a;
 }
 
-label.range, .sorting-title, legend.grid, legend.features {
+.filter-form__filter-name {
     font-size: 18px;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.features-ul, .grid-ul, .cost {
-    list-style: none;
-}
-
-.slider h1 {
+.advantages__slider-text h1 {
     font-size: 55px;
     line-height: 55px;
     background-color: #eeeeee;
 }
 
-.advantegs-a {
+.advantegs__button {
+    margin-top: 45px;
     color: white;
     background-color: #fb565a;
-    text-align: center;
-    vertical-align: middle;
-    text-transform: uppercase;
 }
 
-.advantegs-a:hover, .advantegs-a:focus, .web-sites-order:hover, .web-sites-order:focus, .main-footer-window:hover, .main-footer-window:focus, .button-m-w:hover, .button-m-w:focus {
+.advantegs__button:hover, .advantegs__button:focus, .service__btn_web-sites:hover, .service__btn_web-sites:focus, .footer__conacts_btn:hover, .footer__conacts_btn:focus, .modal-window__btn:hover, .modal-window__btn:focus {
     background-color: #e74246;
 }
 
-.service h2 {
-    color: #000000;
-    text-transform: uppercase;
-}
-
-.service a {
+.service .button {
     color: white;
-    text-transform: uppercase;
     font-weight: bold;
 }
 
-.web-sites-order {
+.service__btn_web-sites {
     background-color: #fb565a;
-    text-align: center;
-    vertical-align: middle;
 }
 
-.applications-order:hover, .applications-order:focus {
-    background-color: #00ca74;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.applications-order {
+.service__btn_applications:hover, .service__btn_applications:focus {
     background-color: #00bc6c;
 }
 
-.presentation-order:hover, .presentation-order:focus {
+.service__btn_applications {
+    background-color: #00ca74
+}
+
+.service__btn_presentation:hover, .service__btn_presentation:focus {
     background-color: #eab534;
 }
 
-.presentation-order {
+.service__btn_presentation {
     background-color: #efc849;
-    text-align: center;
-    vertical-align: middle;
 }
 
-.advantegs-a:active, .web-sites-order:active, .main-footer-window:active, .button-m-w:active, .presentation-order:active {
+.advantegs__button:active, .service__btn_web-site:active, .footer__conacts_btn:active, .modal-window__btn:active, .service__btn_presentation:active {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.information b {
+.information__about-us b {
     font-size: 45px;
     line-height: 45px;
 }
 
-.defis {
+.information__defis {
     color: #fb565a;
 }
 
-.information strong {
+.information__order-text {
     text-transform: uppercase;
+    color: black;
 }
 
-.counter .counter-b {
+.information__counter-text {
     text-align: center;
     font-size: 16px;
     margin-bottom: 45px;
     margin-top: 35px;
 }
 
-.percent {
+.information .counter__percent {
     font-size: 28px;
 }
 
-.table tr {
+.counter__table tr {
     height: 50px;
 }
 
-/*Как я могу сократить каскадность в офомлении таблиц?*/
-
-.table tr th {
+.counter__table th {
     width: 120px;
 }
 
-.table tr:nth-of-type(2) {
+.counter__table tr:nth-of-type(2) {
     color: #283136;
 }
 
-.table table tr:nth-of-type(1) {
+.counter__table tr:nth-of-type(1) {
     font-size: 45px;
     font-weight: bold;
 }
 
-.view-filter {
-    background-color: #eeeeee;
-    text-transform: uppercase;
-    color: #000000;
-    font-weight: bold;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.footer-contacts {
-    background-color: white;
-}
-
-.footer-contacts b {
+.footer__contacts b {
     font-size: 18px;
     text-transform: uppercase;
 }
 
-.browser-img {
+.catalog__card__browser-img {
     opacity: 0.12;
 }
 
-.card-sedona,
-.card-pink,
-.card-borodinskiy,
-.card-mishka,
-.card-A,
-.card-kvast {
+.catalog__card {
     position: relative;
 }
 
-.modal-price {
+.catalog__card__modal-price {
     display: none;
     position: absolute;
     left: 0;
@@ -225,14 +184,14 @@ label.range, .sorting-title, legend.grid, legend.features {
     background-color: #eeeeee;
 }
 
-.modal-price b {
+.catalog__card__modal-price b {
     display: block;
-font-size: 18px;
-color: black;
-padding-top: 35px;
+    font-size: 18px;
+    color: black;
+    padding-top: 35px;
 }
 
-.modal-price p {
+.catalog__card__modal-price p {
     line-height: 18px;
     margin: 0;
     padding: 0;
@@ -240,108 +199,40 @@ padding-top: 35px;
 }
 
 .button-price {
-background-color:  #fb565a;
-color: white;
-margin: 0 65px;
-margin-top: 35px;
-margin-bottom: 40px;
+    background-color: #fb565a;
+    color: white;
+    margin: 0 65px;
+    margin-top: 35px;
+    margin-bottom: 40px;
 }
 
-.card-sedona:hover .modal-price,
-.card-pink:hover .modal-price,
-.card-borodinskiy:hover .modal-price,
-.card-mishka:hover .modal-price,
-.card-A:hover .modal-price,
-.card-kvast:hover .modal-price {
+.catalog__card:hover .modal-price {
     display: block;
 }
 
-.card-sedona:hover .browser-img,
-.card-pink:hover .browser-img,
-.card-borodinskiy:hover .browser-img,
-.card-mishka:hover .browser-img,
-.card-A:hover .browser-img,
-.card-kvast:hover .browser-img {
+.catalog__card:hover .catalog__card__browser-img {
     opacity: 1;
 }
 
-.footer-social b {
+.for-frends__text b {
     font-size: 36px;
 }
 
-.main-footer-window, .button-m-w {
+.footer__conacts_btn, .modal-window__btn {
     color: white;
     background-color: #fb565a;
-    text-align: center;
-    vertical-align: middle;
 }
 
-fieldset {
-    border: 0 none;
-}
-
-.pagination-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.pagination-list .pagination-item {
-    padding: 10px 18px;
-    background-color: #eeeeee;
-    border: 3px solid #eeeeee;
-    margin-right: 10px;
-    margin-top: 60px;
-    margin-bottom: 65px;
-}
-
-.pagination-list .pagination-item-current {
-    background-color: white;
-}
-
-.pagination-list .next {
-    border-radius: 5px;
-    padding: 10px 78px;
-}
-
-.footer-map {
-    position: relative;
-}
-
-.footer-contacts {
-    position: absolute;
-    top: 50px;
-    left: 140px;
-    width: 320px;
-    text-align: center;
-}
-
-.footer-contacts p:first-of-type {
-    margin-top: 53px;
-    margin-bottom: 0;
-}
-
-.footer-contacts p:nth-of-type(2) {
-    margin-top: 26px;
-    margin-bottom: 12px;
-    line-height: 18px;
-}
-
-.footer-contacts p:nth-of-type(3) {
-    margin: 0;
-}
-
-.footer-contacts .main-footer-window {
+.footer__conacts_btn {
     margin-bottom: 33px;
     margin-top: 20px;
 }
 
-.footer-contacts a {
+.footer__contacts .button {
     padding: 13px 50px
 }
 
-.modal.modal-login {
+.modal-window {
     position: absolute;
     left: 240px;
     bottom: 180px;
@@ -352,38 +243,37 @@ fieldset {
     background-color: white;
 }
 
-.user-mail input, 
-.user-name input {
+.modal-window__input_user, .modal-window__input_password {
     box-sizing: border-box;
     width: 360px;
     border: 2px solid #eeeeee;
     border-radius: 3px;
 }
 
-.text-area textarea {
+.modal-window__text-area textarea {
     box-sizing: border-box;
     width: 720px;
     border: 2px solid #eeeeee;
     border-radius: 3px;
 }
 
-.close {
+.modal-window__close {
     margin-left: 380px;
 }
 
-.login-form {
+.modal-window__login-form {
     display: flex;
     flex-wrap: wrap;
 }
 
-.modal-login fieldset {
+.modal-window fieldset {
     padding: 0;
     margin: 0;
 }
 
 /*Флексбоксы*/
 
-.main-header {
+.header {
     display: flex;
     width: 1440px;
     height: 200px;
@@ -392,13 +282,13 @@ fieldset {
     justify-content: flex-start;
 }
 
-.main-header .main-header-logo {
+.header__logo {
     width: 160px;
     margin: auto 0;
     margin-left: 140px;
 }
 
-.main-header .main-navigation {
+.header__navigation {
     width: 460px;
     display: flex;
     justify-content: space-between;
@@ -406,13 +296,13 @@ fieldset {
     margin-left: 180px;
 }
 
-.main-header .basket {
+.header__basket {
     width: 140px;
     margin: auto 0;
     margin-left: 240px;
 }
 
-.slider {
+.advantages__slider {
     width: 1440px;
     display: flex;
     padding: 0;
@@ -422,18 +312,18 @@ fieldset {
     margin-bottom: 85px;
 }
 
-.slider .slider-text {
+.advantages__slider-text {
     width: 420px;
     margin-left: 140px;
 }
 
-.slider .slider-img {
+.advantages__slider-img {
     width: 697px;
     margin-right: 180px;
     padding: 0;
 }
 
-.service-box {
+.service__container {
     width: 1200px;
     display: flex;
     margin: 0 auto;
@@ -441,11 +331,11 @@ fieldset {
     background-color: white;
 }
 
-.web-sites {
+.service__btn_web-sites {
     margin-left: 20px;
 }
 
-.presentation {
+.service__btn_applications {
     margin-right: 80px;
 }
 
@@ -462,33 +352,33 @@ fieldset {
     background-color: white;
 }
 
-.about-us {
+.information__about-us {
     width: 700px;
     margin-left: 20px;
 }
 
-.counter {
+.information__counter {
     width: 360px;
     margin-right: 20px;
     display: flex;
     flex-direction: column;
 }
 
-.table {
+.counter__table {
     align-self: center;
 }
 
-.works-up-hr {
+.clients__line-hr_up {
     margin-top: 80px;
     margin-bottom: 45px;
 }
 
-.works-down-hr {
+.clients_line-hr_down {
     margin-top: 45px;
     margin-bottom: 85px;
 }
 
-.works {
+.clients__leibls {
     display: flex;
     width: 1100px;
     margin: 0 auto;
@@ -496,14 +386,26 @@ fieldset {
     background-color: white;
 }
 
-.footer-map {
+.footer__map {
+    position: relative;
+}
+
+.footer__contacts {
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    left: 140px;
+    width: 320px;
+    text-align: center;
+}
+
+.footer__map {
     width: 1440px;
     margin: 0 auto;
-    justify-content: space-between;
     background-color: white;
 }
 
-.footer-down {
+.footer__for-frends {
     display: flex;
     width: 1200px;
     margin: 0 auto;
@@ -515,11 +417,19 @@ fieldset {
     margin-left: 140px;
 }
 
-.footer-social-web {
+.for-frends__social-web {
     display: flex;
     margin-left: 20px;
     width: 260px;
     justify-content: space-between;
+}
+
+.modal-window {
+    display: none;
+}
+
+.next {
+    text-transform: uppercase;
 }
 
 .main-title {
@@ -550,6 +460,15 @@ fieldset {
     margin: 0;
 }
 
+.internal-page-main__filter-form__btn {
+    background-color: #eeeeee;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+
 .internal-page-main .filter-form fieldset:nth-of-type(1) {
     width: 260px;
     min-height: 205px;
@@ -566,6 +485,46 @@ fieldset {
     margin-bottom: 50px;
 }
 
+.pagination-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.pagination-list .pagination-item {
+    padding: 10px 18px;
+    background-color: #eeeeee;
+    border: 3px solid #eeeeee;
+    margin-right: 10px;
+    margin-top: 60px;
+    margin-bottom: 65px;
+}
+
+.pagination-list .pagination-item-current {
+    background-color: white;
+}
+
+.pagination-list .next {
+    border-radius: 5px;
+    padding: 10px 78px;
+}
+
+.footer__contacts p:first-of-type {
+    margin-top: 53px;
+    margin-bottom: 0;
+}
+
+.footer__contacts p:nth-of-type(2) {
+    margin-top: 26px;
+    margin-bottom: 12px;
+    line-height: 18px;
+}
+
+.footer__contacts p:nth-of-type(3) {
+    margin: 0;
+}
+
 fieldset ul, legend ul {
     list-style: none;
     padding: 0;
@@ -580,82 +539,76 @@ fieldset ul:nth-of-type(2), fieldset ul:nth-of-type(3) {
     margin-top: 30px;
 }
 
-.internal-page-main .products {
+.internal-page-main__catalog {
     display: flex;
-    flex-direction: column;
     margin-right: 20px;
     margin-left: 140px;
+    width: 780px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.internal-page-main .products .sorting {
+.internal-page-main__products__sorting-box {
     width: 760px;
-}
-
-.internal-page-main .products .catalogs {
-    width: 760px;
-}
-
-.internal-page-main .products .pagination-list {
-    width: 445px;
-}
-
-.sorting {
     display: flex;
     justify-content: space-between;
 }
 
-.sorting-controls button, .sorting-arrows button {
+.catalog__card {
+    width: 360px;
+}
+
+.catalog__card a {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.internal-page-main__pagination-list {
+    width: 445px;
+}
+
+.internal-page-main__sorting-controls, .sorting-controls__arrows {
     background-color: white;
 }
 
-.sorting-controls {
+.internal-page-main__sorting-controls {
     display: flex;
 }
 
-.sorting .sorting-title {
+.internal-page-main__sorting-title {
     width: 360px;
 }
 
-.sorting-title p {
+.internal-page-main__sorting-title p {
     margin-top: 0px;
 }
 
-.sorting .sorting-controls {
+.internal-page-main__sorting-controls{
     width: 360px;
 }
 
-.sorting-controls .sorting-controls-item {
+.sorting-controls__item {
     padding: 0;
     margin: 0;
     border: 0;
     text-transform: uppercase;
 }
 
-.sorting-arrows button {
+.sorting-controls__arrows button {
     padding: 0;
     border: 0;
     margin: auto 9px;
 }
 
-.sorting-arrows {
+.sorting-controls__arrows {
     margin-left: auto;
     display: flex;
     justify-content: space-between;
     width: 43px;
 }
 
-.arrow-down, .arrow-up {
+.sorting-controls__arrow-down, .sorting-controls__arrow-up {
     margin: auto 0;
 }
 
-.products .catalog {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.catalog div a {
-    display: flex;
-    flex-direction: column;
-    margin-top: 60px;
-}
