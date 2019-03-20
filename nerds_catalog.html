@@ -27,188 +27,191 @@
 
 </header>
 
-  <main>
-    <h1 class="main-title">Магазин готовых шаблонов</h1>
-    <div class="internal-page-main">
-      <section class="internal-page-main__filter">
-        <h3 class="visually-hidden">Настройка фильтров</h3>
-        <form class="internal-page-main__filter-form" metod="get" action="#" oninput="corollary.value=range.value">
-          <fieldset>
-            <Legend class="filter-form__filter-name"><label class="range" for="range">Стоимость:(*JS)</label></Legend>
-            <ul>
-              <li class="filter-option">
-                <label for="range"></label>
-                <input id="range" class="invis filter-option-range" type="range" min="0" max="20000" step="1000">
-                <output name="corollary">0</output>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend class="filter-form__filter-name">сетка:</legend>
-            <ul>
-              <li class="filter-option">
-                <input id="adaptv-button" class="invis filter-option-radio" type="radio" name="product-group"
-                  value="adaptiv">
-                <Label for="adaptv-button">адаптивная</Label>
-              </li>
-              <li class="filter-option">
-                <input id="fix-button" class="invis filter-option-radio" type="radio" name="product-group"
-                  value="fixed">
-                <Label for="fix-button">фиксированная</Label>
+<main>
+  <h1 class="main-title">Магазин готовых шаблонов</h1>
+  <div class="internal-page-main">
+    <section class="internal-page-main__filter">
+      <h3 class="visually-hidden">Настройка фильтров</h3>
+      <form class="filter-form" metod="get" action="#" oninput="corollary.value=range.value">
+        <fieldset>
+          <Legend class="filter-form__filter-name"><label class="range" for="range">Стоимость:(*JS)</label></Legend>
+          <ul>
+            <li>
+              <label for="range"></label>
+              <input id="range" class="invis filter-form__input" type="range" min="0" max="20000" step="1000">
+              <output name="corollary">0</output>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend class="filter-form__filter-name">сетка:</legend>
+          <ul>
+            <li>
+              <input id="adaptv-button" class="invis filter-form__input" type="radio" name="product-group"
+                value="adaptiv">
+              <Label for="adaptv-button">адаптивная</Label>
+            </li>
+            <l>
+              <input id="fix-button" class="invis filter-form__input" type="radio" name="product-group" value="fixed">
+              <Label for="fix-button">фиксированная</Label>
               </li>
               <li>
-                <p class="filter-option">резиновая</p>
+                <p>резиновая</p>
               </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend class="filter-form__filter-name">особенности:</legend>
-            <ul>
-              <li class="filter-option">
-                <input id="slaider-button" class="invis filter-option-checkbox" type="checkbox" name="slaider">
-                <Label for="slaider-button">Слайдер</Label>
-              </li>
-              <li class="filter-option">
-                <input id="advantages-button" class="invis filter-option-checkbox" type="checkbox" name="advantages">
-                <Label for="advantages-button">Блок преимуществ</Label>
-              </li>
-              <li class="filter-option">
-                <input id="news-button" class="invis filter-option-checkbox" type="checkbox" name="news">
-                <Label for="news-button">Новости</Label>
-              </li>
-              <li class="filter-option">
-                <input id="gallery-button" class="invis filter-option-checkbox" type="checkbox" name="gallery">
-                <Label for="gallery-button">Галерея</Label>
-              </li>
-              <li class="filter-option">
-                <input id="basket-button" class="invis filter-option-checkbox" type="checkbox" name="basket">
-                <Label for="basket-button">корзина</Label>
-              </li>
-            </ul>
-          </fieldset>
-          <div class="internal-page-main__filter-form__btn">
-            <a class="internal-page-main__filter-form__btn button" href="#">показать</a>
-          </div>
-        </form>
-      </section>
-      <section class="internal-page-main__products">
-        <h2 class="visually-hidden">Каталог шаблонов</h2>
-        <div class="internal-page-main__products__sorting-box">
-          <div class="internal-page-main__sorting-title">
-            <p>Cортировать:</p>
-          </div>
-          <div class="internal-page-main__sorting-controls">
-            <button class="sorting-controls__item">По цене</button>
-            <button class="sorting-controls__item">По типу</button>
-            <button class="sorting-controls__item">По названию</button>
-            <div class="sorting-controls__arrows">
-              <button class="sorting-controls__arrow-down"><img src="img-nerds/icon-down-dir.png" alt="стрелка вниз"></button>
-              <button class="sorting-controls__arrow-up"><img src="img-nerds/icon-up-dir.png" alt="стрелка вверх"></button>
-            </div>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend class="filter-form__filter-name">особенности:</legend>
+          <ul>
+            <li>
+              <input id="slaider-button" class="invis filter-form__input" type="checkbox" name="slaider">
+              <Label for="slaider-button">Слайдер</Label>
+            </li>
+            <li>
+              <input id="advantages-button" class="invis filter-form__input" type="checkbox" name="advantages">
+              <Label for="advantages-button">Блок преимуществ</Label>
+            </li>
+            <li>
+              <input id="news-button" class="invis filter-form__input" type="checkbox" name="news">
+              <Label for="news-button">Новости</Label>
+            </li>
+            <li>
+              <input id="gallery-button" class="invis filter-form__input" type="checkbox" name="gallery">
+              <Label for="gallery-button">Галерея</Label>
+            </li>
+            <li>
+              <input id="basket-button" class="invis filter-form__input" type="checkbox" name="basket">
+              <Label for="basket-button">корзина</Label>
+            </li>
+          </ul>
+        </fieldset>
+        <div class="filter-form__btn">
+          <a class="filter-form__btn button" href="#">показать</a>
+        </div>
+      </form>
+    </section>
+    <section class="internal-page-main__products">
+      <h2 class="visually-hidden">Каталог шаблонов</h2>
+      <div class="sorting-box">
+        <div class="sorting-title">
+          <p>Cортировать:</p>
+        </div>
+        <div class="sorting-controls">
+          <button class="sorting-controls__item">По цене</button>
+          <button class="sorting-controls__item">По типу</button>
+          <button class="sorting-controls__item">По названию</button>
+          <div class="sorting-controls__arrows">
+            <button class="sorting-controls__arrow-down"><img src="img-nerds/icon-down-dir.png"
+                alt="стрелка вниз"></button>
+            <button class="sorting-controls__arrow-up"><img src="img-nerds/icon-up-dir.png"
+                alt="стрелка вверх"></button>
           </div>
         </div>
-        <div class="internal-page-main__catalog">
-          <div class="catalog__card"><a href="#"><img class="catalog__card__browser-img" src="img-nerds/browser.png" alt=""><img
-                src="img-nerds/img-sedona.jpg" alt="Седона"></a>
-            <div class="catalog__card__modal-price">
-              <b>SEDONA</b>
-              <p>Информационный сайт<br>для туристов</p>
-              <a class="button button-price" href="#">9 900 РУБ</a>
-            </div>
-          </div>
-          <div class="catalog__card"><a href="#"><img class="catalog__card__browser-img" src="img-nerds/browser.png" alt=""><img
-                src="img-nerds/img-pink.jpg" alt="Пинк"></a>
-                <div class="catalog__card__modal-price">
-                    <b>SEDONA</b>
-                    <p>Информационный сайт<br>для туристов</p>
-                    <a class="button button-price" href="#">9 900 РУБ</a>
-                  </div>
-          </div>
-          <div class="catalog__card"><a href="#"><img class="catalog__card__browser-img" src="img-nerds/browser.png" alt=""><img
-                src="img-nerds/img-barbershop.jpg" alt="Бородинский"></a>
-                <div class="catalog__card__modal-price">
-                    <b>SEDONA</b>
-                    <p>Информационный сайт<br>для туристов</p>
-                    <a class="button button-price" href="#">9 900 РУБ</a>
-                  </div>
-          </div>
-          <div class="catalog__card"><a href="#"><img class="catalog__card__browser-img" src="img-nerds/browser.png" alt=""><img
-                src="img-nerds/img-mishka.jpg" alt="Мишка"></a>
-                <div class="catalog__card__modal-price">
-                    <b>SEDONA</b>
-                    <p>Информационный сайт<br>для туристов</p>
-                    <a class="button button-price" href="#">9 900 РУБ</a>
-                  </div>
-          </div>
-          <div class="catalog__card"><a href="#"><img class="catalog__card__browser-img" src="img-nerds/browser.png" alt=""><img
-                src="img-nerds/img-aplus.jpg" alt="А+"></a>
-                <div class="catalog__card__modal-price">
-                    <b>SEDONA</b>
-                    <p>Информационный сайт<br>для туристов</p>
-                    <a class="button button-price" href="#">9 900 РУБ</a>
-                  </div>
-          </div>
-          <div class="catalog__card"><a href="#"><img class="catalog__card__browser-img" src="img-nerds/browser.png" alt=""><img
-                src="img-nerds/img-kvast.jpg" alt="Кваст"></a>
-                <div class="catalog__card__modal-price">
-                    <b>SEDONA</b>
-                    <p>Информационный сайт<br>для туристов</p>
-                    <a class="button button-price" href="#">9 900 РУБ</a>
-                  </div>
+      </div>
+      <div class="catalog">
+        <div class="catalog__card"><a href="#"><img class="catalog__card__browser-img" src="img-nerds/browser.png"
+              alt=""><img src="img-nerds/img-sedona.jpg" alt="Седона"></a>
+          <div class="catalog__modal-price">
+            <b>SEDONA</b>
+            <p>Информационный сайт<br>для туристов</p>
+            <a class="button button-price" href="#">9 900 РУБ</a>
           </div>
         </div>
-        <ul class="internal-page-main__pagination-list">
-          <li class="internal-page-main__pagination-item pagination-item-current"><a href="#">1</a></li>
-          <li class="internal-page-main__pagination-item"><a href="#">2</a></li>
-          <li class="internal-page-main__pagination-item"><a href="#">3</a></li>
-          <li class="internal-page-main__pagination-item next"><a href="#">следующая</a></li>
-        </ul>
-      </section>
-    </div>
-  </main>
-  <footer class="footer">
-    <div class="footer__map">
-      <a href="map.html"><img src="img-nerds/Map.jpg" alt="Карта"></a>
+        <div class="catalog__card"><a href="#"><img class="catalog__card__browser-img" src="img-nerds/browser.png"
+              alt=""><img src="img-nerds/img-pink.jpg" alt="Пинк"></a>
+          <div class="catalog__modal-price">
+            <b>SEDONA</b>
+            <p>Информационный сайт<br>для туристов</p>
+            <a class="button button-price" href="#">9 900 РУБ</a>
+          </div>
+        </div>
+        <div class="catalog__card"><a href="#"><img class="catalog__card__browser-img" src="img-nerds/browser.png"
+              alt=""><img src="img-nerds/img-barbershop.jpg" alt="Бородинский"></a>
+          <div class="catalog__modal-price">
+            <b>SEDONA</b>
+            <p>Информационный сайт<br>для туристов</p>
+            <a class="button button-price" href="#">9 900 РУБ</a>
+          </div>
+        </div>
+        <div class="catalog__card"><a href="#"><img class="catalog__card__browser-img" src="img-nerds/browser.png"
+              alt=""><img src="img-nerds/img-mishka.jpg" alt="Мишка"></a>
+          <div class="catalog__modal-price">
+            <b>SEDONA</b>
+            <p>Информационный сайт<br>для туристов</p>
+            <a class="button button-price" href="#">9 900 РУБ</a>
+          </div>
+        </div>
+        <div class="catalog__card"><a href="#"><img class="catalog__card__browser-img" src="img-nerds/browser.png"
+              alt=""><img src="img-nerds/img-aplus.jpg" alt="А+"></a>
+          <div class="catalog__modal-price">
+            <b>SEDONA</b>
+            <p>Информационный сайт<br>для туристов</p>
+            <a class="button button-price" href="#">9 900 РУБ</a>
+          </div>
+        </div>
+        <div class="catalog__card"><a href="#"><img class="catalog__card__browser-img" src="img-nerds/browser.png"
+              alt=""><img src="img-nerds/img-kvast.jpg" alt="Кваст"></a>
+          <div class="catalog__modal-price">
+            <b>SEDONA</b>
+            <p>Информационный сайт<br>для туристов</p>
+            <a class="button button-price" href="#">9 900 РУБ</a>
+          </div>
+        </div>
+      </div>
+      <ul class="pagination-list">
+        <li class="pagination-list__item current"><a href="#">1</a></li>
+        <li class="pagination-list__item"><a href="#">2</a></li>
+        <li class="pagination-list__item"><a href="#">3</a></li>
+        <li class="pagination-list__item next"><a href="#">следующая</a></li>
+      </ul>
+    </section>
+  </div>
+</main>
+<footer class="footer">
+  <div class="footer__map">
+    <a href="map.html"><img src="img-nerds/Map.jpg" alt="Карта"></a>
 
-      <div class="footer__contacts">
-        <p><b>Nerds design studio</b></p>
-        <p>191186, Санкт петербург,<br> ул.Б.Конюшенная, д. 19/8</p>
-        <p> тел. +7 (812) 275-75-75</p>
-        <p><a class="footer__conacts_btn button" href="#">напишите нам</a></p>
-      </div>
+    <div class="footer__contacts">
+      <p><b>Nerds design studio</b></p>
+      <p>191186, Санкт петербург,<br> ул.Б.Конюшенная, д. 19/8</p>
+      <p> тел. +7 (812) 275-75-75</p>
+      <p><a class="footer__conacts_btn button" href="#">напишите нам</a></p>
     </div>
-    <div class="footer__for-frends">
-      <div class="for-frends__social-web">
-        <div><a class="for-frends__social-button" href="#"><img src="img-nerds/vk.png" alt="вконтакте"></a></div>
-        <div><a class="for-frends__social-button" href="#"><img src="img-nerds/fb-icon.png" alt="фейсбук"></a></div>
-        <div><a class="for-frends__social-button" href="#"><img src="img-nerds/insta-icon.png" alt="инстаграмм"></a></div>
-      </div>
-      <div class="for-frends__text">
-        <b>Давайте дружить, это выгодно!</b><br>
-        <p><span>Скидка 10% для друзей из социальных сетей.</span></p>
-      </div>
+  </div>
+  <div class="footer__for-frends">
+    <div class="for-frends__social-web">
+      <div><a class="for-frends__social-button" href="#"><img src="img-nerds/vk.png" alt="вконтакте"></a></div>
+      <div><a class="for-frends__social-button" href="#"><img src="img-nerds/fb-icon.png" alt="фейсбук"></a></div>
+      <div><a class="for-frends__social-button" href="#"><img src="img-nerds/insta-icon.png" alt="инстаграмм"></a></div>
+    </div>
+    <div class="for-frends__text">
+      <b>Давайте дружить, это выгодно!</b><br>
+      <p><span>Скидка 10% для друзей из социальных сетей.</span></p>
+    </div>
 
-    </div>
-  </footer>
-  <section class="modal-window">
-    <h2>Напишите нам</h2>
-    <form class="modal-window__login-form" action="#" method="post">
-      <fieldset class="modal-window__user-name">
-        <legend><label class="" for="user-login"><b>Ваше имя:</b></label></legend>
-        <input class="modal-window__input_user" id="user-login" type="text" name="login" placeholder="Представтесь, пожалуйста">
-      </fieldset>
-      <button class="modal-window__close">X</button>
-      <fieldset class="user-mail">
-        <legend><label class="" for="user-email"><b>Ваш e-mail:</b></label></legend>
-        <input class="modal-window__input_password" id="user-email" type="email" name="email" placeholder="Для отправки ответа">
-      </fieldset>
-      <fieldset class="modal-window__text-area">
-        <legend><label for="textarea"><b>Текст письма:</b></label></legend>
-        <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-      </fieldset>
-      <a class="modal-window__btn button" href="#">Отправить</a>
-    </form>
-  </section>
+  </div>
+</footer>
+<section class="modal-window">
+  <h2>Напишите нам</h2>
+  <form class="modal-window__login-form" action="#" method="post">
+    <fieldset class="modal-window__user-name">
+      <legend><label class="" for="user-login"><b>Ваше имя:</b></label></legend>
+      <input class="modal-window__input_user" id="user-login" type="text" name="login"
+        placeholder="Представтесь, пожалуйста">
+    </fieldset>
+    <button class="modal-window__close">X</button>
+    <fieldset class="user-mail">
+      <legend><label class="" for="user-email"><b>Ваш e-mail:</b></label></legend>
+      <input class="modal-window__input_password" id="user-email" type="email" name="email"
+        placeholder="Для отправки ответа">
+    </fieldset>
+    <fieldset class="modal-window__text-area">
+      <legend><label for="textarea"><b>Текст письма:</b></label></legend>
+      <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+    </fieldset>
+    <a class="modal-window__btn button" href="#">Отправить</a>
+  </form>
+</section>
 </body>
 
 </html>

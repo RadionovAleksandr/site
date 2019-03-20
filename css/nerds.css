@@ -14,6 +14,12 @@ fieldset {
     border: none;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 li {
     list-style: none;
     padding: 0;
@@ -460,7 +466,7 @@ hr {
     margin: 0;
 }
 
-.internal-page-main__filter-form__btn {
+.filter-form__btn {
     background-color: #eeeeee;
     text-transform: uppercase;
     color: #000000;
@@ -469,18 +475,18 @@ hr {
     vertical-align: middle;
 }
 
-.internal-page-main .filter-form fieldset:nth-of-type(1) {
+.filter-form fieldset:nth-of-type(1) {
     width: 260px;
     min-height: 205px;
     margin-bottom: 60px;
 }
 
-.internal-page-main .filter-form fieldset:nth-of-type(2) {
+.filter-form fieldset:nth-of-type(2) {
     width: 260px;
     margin-bottom: 60px;
 }
 
-.internal-page-main .filter-form fieldset:nth-of-type(3) {
+.filter-form fieldset:nth-of-type(3) {
     width: 260px;
     margin-bottom: 50px;
 }
@@ -492,7 +498,7 @@ hr {
     display: flex;
 }
 
-.pagination-list .pagination-item {
+.pagination-list__item {
     padding: 10px 18px;
     background-color: #eeeeee;
     border: 3px solid #eeeeee;
@@ -501,7 +507,7 @@ hr {
     margin-bottom: 65px;
 }
 
-.pagination-list .pagination-item-current {
+.pagination-list .current {
     background-color: white;
 }
 
@@ -525,12 +531,6 @@ hr {
     margin: 0;
 }
 
-fieldset ul, legend ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
 fieldset ul:nth-of-type(1) {
     margin-top: 60px;
 }
@@ -539,7 +539,7 @@ fieldset ul:nth-of-type(2), fieldset ul:nth-of-type(3) {
     margin-top: 30px;
 }
 
-.internal-page-main__catalog {
+.catalog {
     display: flex;
     margin-right: 20px;
     margin-left: 140px;
@@ -548,7 +548,7 @@ fieldset ul:nth-of-type(2), fieldset ul:nth-of-type(3) {
     justify-content: space-between;
 }
 
-.internal-page-main__products__sorting-box {
+.internal-page-main__products .sorting-box {
     width: 760px;
     display: flex;
     justify-content: space-between;
@@ -564,28 +564,25 @@ fieldset ul:nth-of-type(2), fieldset ul:nth-of-type(3) {
     margin-top: 60px;
 }
 
-.internal-page-main__pagination-list {
+.pagination-list {
     width: 445px;
 }
 
-.internal-page-main__sorting-controls, .sorting-controls__arrows {
+.sorting-controls, .sorting-controls__arrows {
     background-color: white;
 }
 
-.internal-page-main__sorting-controls {
+.sorting-controls {
     display: flex;
-}
-
-.internal-page-main__sorting-title {
     width: 360px;
 }
 
-.internal-page-main__sorting-title p {
+.sorting-title {
+    width: 360px;
+}
+
+.sorting-title p {
     margin-top: 0px;
-}
-
-.internal-page-main__sorting-controls{
-    width: 360px;
 }
 
 .sorting-controls__item {
@@ -611,4 +608,3 @@ fieldset ul:nth-of-type(2), fieldset ul:nth-of-type(3) {
 .sorting-controls__arrow-down, .sorting-controls__arrow-up {
     margin: auto 0;
 }
-
