@@ -12,15 +12,11 @@ body {
 
 fieldset {
     border: none;
-}
-
-ul {
-    list-style: none;
     padding: 0;
     margin: 0;
 }
 
-li {
+ul, li {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -49,6 +45,14 @@ hr {
     text-transform: uppercase;
 }
 
+.header__logo a:hover {
+    opacity: 0.8;
+}
+
+.header__logo a:active {
+    opacity: 0.3;
+}
+
 .header__navigation a, .header__basket a {
     color: #000000;
     background-color: #eeeeee;
@@ -70,17 +74,17 @@ hr {
     color: rgba(0, 0, 0, 0.3)
 }
 
-.navigation__shop--active {
+.navigation__item--active {
     border-bottom: 2px solid #fb565a;
 }
 
-.internal-page-main__filter .form__filter-name {
+.internal-page-main .form__filter-name {
     font-size: 18px;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.slider__text h1 {
+.slider__text .slider-title {
     font-size: 55px;
     line-height: 55px;
     background-color: #eeeeee;
@@ -92,7 +96,7 @@ hr {
     background-color: #fb565a;
 }
 
-.slider__button:hover, .slider__button:focus, .item__btn--web-sites:hover, .item__btn--web-sites:focus, .footer__conacts_btn:hover, .footer__conacts_btn:focus, .modal-window__btn:hover, .modal-window__btn:focus {
+.slider__button:hover, .slider__button:focus, .service__btn--web-sites:hover, .service__btn--web-sites:focus, .footer__conacts_btn:hover, .footer__conacts_btn:focus, .modal-window__btn:hover, .modal-window__btn:focus {
     background-color: #e74246;
 }
 
@@ -101,36 +105,36 @@ hr {
     font-weight: bold;
 }
 
-.item__btn--web-sites {
+.service__btn--web-sites {
     background-color: #fb565a;
 }
 
-.item__btn--applications:hover, .item__btn--applications:focus {
+.service__btn--applications:hover, .service__btn--applications:focus {
     background-color: #00bc6c;
 }
 
-.item__btn--applications {
+.service__btn--applications {
     background-color: #00ca74
 }
 
-.item__btn--presentation:hover, .item__btn--presentation:focus {
+.service__btn--presentation:hover, .service__btn--presentation:focus {
     background-color: #eab534;
 }
 
-.item__btn--presentation {
+.service__btn--presentation {
     background-color: #efc849;
 }
 
-.slider__button:active, .item__btn--web-sites:active, .footer__conacts_btn:active, .modal-window__btn:active, .item__btn--presentation:active .item__btn--applications {
+.slider__button:active, .service__btn--web-sites:active, .footer__conacts_btn:active, .modal-window__btn:active, .item__btn--presentation:active .item__btn--applications {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.information__about-us b {
+.information__about-us .information__text--big {
     font-size: 45px;
     line-height: 45px;
 }
 
-.information  .about-us__defis {
+.information .about-us__defis {
     color: #fb565a;
 }
 
@@ -167,7 +171,7 @@ hr {
     font-weight: bold;
 }
 
-.footer__contacts b {
+.contacts__organization-name {
     font-size: 18px;
     text-transform: uppercase;
 }
@@ -180,7 +184,7 @@ hr {
     position: relative;
 }
 
-.item__modal-price {
+.catalog__modal-price {
     display: none;
     position: absolute;
     left: 0;
@@ -190,14 +194,14 @@ hr {
     background-color: #eeeeee;
 }
 
-.item__modal-price b {
+.catalog__product-name {
     display: block;
     font-size: 18px;
     color: black;
     padding-top: 35px;
 }
 
-.item__modal-price p {
+.catalog__product-text {
     line-height: 18px;
     margin: 0;
     padding: 0;
@@ -268,11 +272,6 @@ hr {
     flex-wrap: wrap;
 }
 
-.modal-window fieldset {
-    padding: 0;
-    margin: 0;
-}
-
 /*Флексбоксы*/
 
 .header {
@@ -337,7 +336,7 @@ hr {
     margin-left: 20px;
 }
 
-.item__btn--applications{
+.item__btn--applications {
     margin-right: 80px;
 }
 
@@ -370,12 +369,12 @@ hr {
     align-self: center;
 }
 
-.clients__line-hr_up {
+.clients__line-hr--up {
     margin-top: 80px;
     margin-bottom: 45px;
 }
 
-.clients_line-hr_down {
+.clients_line-hr--down {
     margin-top: 45px;
     margin-bottom: 85px;
 }
@@ -457,32 +456,30 @@ hr {
     margin-left: 20px;
 }
 
-.filter__form fieldset {
-    padding: 0;
-    margin: 0;
+.filter__form .filter__btn-wrap {
+    margin-top: 50px;
 }
 
-.filter__form .filter__btn {
+.filter__btn {
     background-color: #eeeeee;
-    text-transform: uppercase;
     color: #000000;
+    text-transform: uppercase;
     font-weight: bold;
     text-align: center;
     vertical-align: middle;
+    width: 180px;
 }
 
-.filter__form fieldset:nth-of-type(1) {
-    width: 260px;
+.filter__field-cost {
     min-height: 205px;
-    margin-bottom: 60px;
 }
 
-.filter__form fieldset:nth-of-type(2) {
+.filter__field-greed, .filter__field-cost {
     width: 260px;
     margin-bottom: 60px;
 }
 
-.filter__form fieldset:nth-of-type(3) {
+.filter__field-features {
     width: 260px;
     margin-bottom: 50px;
 }
@@ -527,15 +524,13 @@ hr {
     margin: 0;
 }
 
-.filter-form ul {
-    margin-top: 30px;
+.filter__list {
+    margin-top: 15px;
 }
 
-.filter-form ul:nth-of-type(1) {
-    margin-top: 60px;
+.filter__field-cost .filter__list {
+    margin-top: 55px;
 }
-
-
 
 .catalog {
     display: flex;
@@ -546,7 +541,7 @@ hr {
     justify-content: space-between;
 }
 
-.internal-page-main__products .products__sorting-box {
+.products .products__sorting-box {
     width: 760px;
     display: flex;
     justify-content: space-between;
@@ -563,14 +558,13 @@ hr {
     margin-top: 60px;
 }
 
-
 .catalog__item:hover .item__browser-img {
     opacity: 1;
 }
 
 .catalog__item:hover .item__modal-price {
     display: block;
-} 
+}
 
 .internal-page-main .pagination-list {
     width: 445px;
@@ -581,11 +575,11 @@ hr {
     width: 360px;
 }
 
-.sorting-box__title{
+.sorting-box__title {
     width: 360px;
 }
 
-.sorting-box__title p {
+.sorting-box__title .title{
     margin-top: 0px;
 }
 
@@ -598,7 +592,7 @@ hr {
     background-color: white;
 }
 
-.controls__arrows button {
+.controls__arrows .arrow {
     padding: 0;
     border: 0;
     margin: auto 9px;

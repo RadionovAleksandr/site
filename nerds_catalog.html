@@ -18,7 +18,7 @@
   <nav class="header__navigation">
     <a href="#.html">студия</a>
     <a href="#.html">клиенты</a>
-    <a class="navigation__shop--active" href="#.html">магазин</a>
+    <a class="navigation__item--active" href="#.html">магазин</a>
     <a href="#.html">контакты</a>
   </nav>
   <div class="header__basket">
@@ -30,12 +30,12 @@
 <main>
   <h1 class="main-title">Магазин готовых шаблонов</h1>
   <div class="internal-page-main">
-    <section class="internal-page-main__filter">
+    <section class="filter">
       <h3 class="visually-hidden">Настройка фильтров</h3>
       <form class="filter__form" metod="get" action="#" oninput="corollary.value=range.value">
-        <fieldset>
+        <fieldset class="filter__field-cost">
           <Legend class="form__filter-name"><label class="range" for="range">Стоимость:(*JS)</label></Legend>
-          <ul>
+          <ul class="filter__list">
             <li>
               <label for="range"></label>
               <input id="range" class="invis form__input" type="range" min="0" max="20000" step="1000">
@@ -43,15 +43,15 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="filter__field-greed">
           <legend class="form__filter-name">сетка:</legend>
-          <ul>
+          <ul class="filter__list">
             <li>
               <input id="adaptv-button" class="invis form__input" type="radio" name="product-group"
                 value="adaptiv">
               <Label for="adaptv-button">адаптивная</Label>
             </li>
-            <l>
+            <li>
               <input id="fix-button" class="invis form__input" type="radio" name="product-group" value="fixed">
               <Label for="fix-button">фиксированная</Label>
               </li>
@@ -59,10 +59,10 @@
                 <p>резиновая</p>
               </li>
           </ul>
-        </fieldset>
+        </fieldset class="filter__field-features">
         <fieldset>
           <legend class="form__filter-name">особенности:</legend>
-          <ul>
+          <ul class="filter__list">
             <li>
               <input id="slaider-button" class="invis form__input" type="checkbox" name="slaider">
               <Label for="slaider-button">Слайдер</Label>
@@ -85,25 +85,25 @@
             </li>
           </ul>
         </fieldset>
-        <div class="filter__btn">
+        <div class="filter__btn-wrap">
           <a class="filter__btn button" href="#">показать</a>
         </div>
       </form>
     </section>
-    <section class="internal-page-main__products">
+    <section class="products">
       <h2 class="visually-hidden">Каталог шаблонов</h2>
       <div class="products__sorting-box">
         <div class="sorting-box__title">
-          <p>Cортировать:</p>
+          <p class="title">Cортировать:</p>
         </div>
         <div class="sorting-box__controls">
           <button class="controls__item">По цене</button>
           <button class="controls__item">По типу</button>
           <button class="controls__item">По названию</button>
           <div class="controls__arrows">
-            <button class="arrow--down"><img src="img-nerds/icon-down-dir.png"
+            <button class="arrow arrow--down"><img src="img-nerds/icon-down-dir.png"
                 alt="стрелка вниз"></button>
-            <button class="arrow--up"><img src="img-nerds/icon-up-dir.png"
+            <button class="arrow arrow--up"><img src="img-nerds/icon-up-dir.png"
                 alt="стрелка вверх"></button>
           </div>
         </div>
@@ -111,49 +111,49 @@
       <div class="catalog">
         <div class="catalog__item"><a href="#"><img class="item__browser-img" src="img-nerds/browser.png"
               alt=""><img src="img-nerds/img-sedona.jpg" alt="Седона"></a>
-          <div class="item__modal-price">
+          <div class="catalog__modal-price">
             <b>SEDONA</b>
             <p>Информационный сайт<br>для туристов</p>
             <a class="button button-price" href="#">9 900 РУБ</a>
           </div>
         </div>
-        <div class="catalog__item"><a href="#"><img class="item__browser-img" src="img-nerds/browser.png"
+        <div class="catalog__item"><a href="#"><img class="catalog__browser-img" src="img-nerds/browser.png"
               alt=""><img src="img-nerds/img-pink.jpg" alt="Пинк"></a>
-          <div class="item__modal-price">
+          <div class="catalog__modal-price">
             <b>SEDONA</b>
             <p>Информационный сайт<br>для туристов</p>
             <a class="button button-price" href="#">9 900 РУБ</a>
           </div>
         </div>
-        <div class="catalog__item"><a href="#"><img class="item__browser-img" src="img-nerds/browser.png"
+        <div class="catalog__item"><a href="#"><img class="catalog__browser-img" src="img-nerds/browser.png"
               alt=""><img src="img-nerds/img-barbershop.jpg" alt="Бородинский"></a>
-          <div class="item__modal-price">
+          <div class="catalog__modal-price">
             <b>SEDONA</b>
             <p>Информационный сайт<br>для туристов</p>
             <a class="button button-price" href="#">9 900 РУБ</a>
           </div>
         </div>
-        <div class="catalog__item"><a href="#"><img class="item__browser-img" src="img-nerds/browser.png"
+        <div class="catalog__item"><a href="#"><img class="catalog__browser-img" src="img-nerds/browser.png"
               alt=""><img src="img-nerds/img-mishka.jpg" alt="Мишка"></a>
-          <div class="item__modal-price">
+          <div class="catalog__modal-price">
             <b>SEDONA</b>
             <p>Информационный сайт<br>для туристов</p>
             <a class="button button-price" href="#">9 900 РУБ</a>
           </div>
         </div>
-        <div class="catalog__item"><a href="#"><img class="item__browser-img" src="img-nerds/browser.png"
+        <div class="catalog__item"><a href="#"><img class="catalog__browser-img" src="img-nerds/browser.png"
               alt=""><img src="img-nerds/img-aplus.jpg" alt="А+"></a>
-          <div class="item__modal-price">
+          <div class="catalog__modal-price">
             <b>SEDONA</b>
             <p>Информационный сайт<br>для туристов</p>
             <a class="button button-price" href="#">9 900 РУБ</a>
           </div>
         </div>
-        <div class="catalog__item"><a href="#"><img class="item__browser-img" src="img-nerds/browser.png"
+        <div class="catalog__item"><a href="#"><img class="catalog__browser-img" src="img-nerds/browser.png"
               alt=""><img src="img-nerds/img-kvast.jpg" alt="Кваст"></a>
-          <div class="item__modal-price">
-            <b>SEDONA</b>
-            <p>Информационный сайт<br>для туристов</p>
+          <div class="catalog__modal-price">
+            <b class="catalog__product-name">SEDONA</b>
+            <p class="catalog__product-text">Информационный сайт<br>для туристов</p>
             <a class="button button-price" href="#">9 900 РУБ</a>
           </div>
         </div>
@@ -173,8 +173,8 @@
 
     <div class="footer__contacts">
       <p class="contacts__organization-name"><b>Nerds design studio</b></p>
-      <p class="contacts__organization-adres">191186, Санкт петербург,<br> ул.Б.Конюшенная, д. 19/8</p>
-      <p class="contacts__organization-phon"> тел. +7 (812) 275-75-75</p>
+      <p class="contacts__organization-addres">191186, Санкт петербург,<br> ул.Б.Конюшенная, д. 19/8</p>
+      <p class="contacts__organization-phone"> тел. +7 (812) 275-75-75</p>
       <p><a class="conacts__btn button" href="#">напишите нам</a></p>
     </div>
   </div>
