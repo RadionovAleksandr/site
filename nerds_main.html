@@ -123,9 +123,33 @@
     </div>
     <div class="footer__for-frends">
       <div class="for-frends__social-web">
-        <div><a class="for-frends__social-button" href="#"><img src="img-nerds/vk.png" alt="вконтакте"></a></div>
-        <div><a class="for-frends__social-button" href="#"><img src="img-nerds/fb-icon.png" alt="фейсбук"></a></div>
-        <div><a class="for-frends__social-button" href="#"><img src="img-nerds/insta-icon.png" alt="инстаграмм"></a></div>
+        <div>
+          <a class="for-frends__social-button" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="15">
+              <image width="26" height="15"
+                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAPCAQAAABQWBdtAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjAxgQGRgaQ1QSAAABF0lEQVQoz42QIUuDYRSFn09YEUEGgggyMGgWhoJFJyqIYDAbRLAMTCaT2WITtKnBPsEfoBYxCKYFy5qKQaa4wcbmY9j2+e4Lc6edw33Ofe8bucw4ADWuoio4xRkzpIAGD6xFXwBGLDEEwCBvWLGjEwCHPfBP8wDgRpDV8Tg2FUdarb7HWa4N3QbQJWasx/awPfLUDZkLkKoTgKfBrkwCyoID3gdQvtUb7ioAWIz9NLgbIAUj2s85CptM+R27dbNWY1cyTUemg9ObPgYVL8Hv/jhHKLf8X890y8jrPrCdJDbqax9YPonNBid39OGFzd7bFv1MQPvgZlfScCGJTXrXNbIK4F7PDwFwxXOLli1bcqydbccX17z5Bb45CoW7amS6AAAAAElFTkSuQmCC" />
+              </svg>
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </div>
+        <div>
+          <a class="for-frends__social-button" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="22">
+              <image width="12" height="22"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAWCAQAAABeMbWRAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjAxgQGhA/tY/jAAAAVElEQVQoz2NggIP/Bv93/v/1HwqQhb/9RwIIiZ3/UQAjXOIXAysDEoBK/Gdk+AcVUWD4iKyAAW6GAITPxIAD4JRgRHIYcTrIsQPqPIb3NPPH4JQAAMxOR+EfSfRoAAAAAElFTkSuQmCC" />
+              </svg>
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </div>
+        <div>
+          <a class="for-frends__social-button" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="21">
+              <image width="21" height="21"
+                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAQAAAADHm0dAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjAxgQGilgsAfrAAAAz0lEQVQoz6WTPW7CQBBG31oIRVTmBEnFEcwVfEl3FgdwAZdCGCqnykvhfwPWRplmVvM9zc/uLO4sbFy3xsIdFsZZEWz4IMa+g67IXzwAqAE2q5ke4Q7QZkuiiv8fvXBkz5ELULfDd8riSs6GLh48z6Ue/fSqajamN1P1ajpH095P0D6WdG5QagAOk67bcx1+5r2mVm96rXpmRPNhsMzUbBgqf0LB8sWSlGPlKbp9gku3L1EAcytv6s3KnNk8C7STFm/YIn/Y14RT5LaciP9bv6UMlLD8vPvAAAAAAElFTkSuQmCC" />
+              </svg>
+            <span class="visually-hidden">Инстаграмм</span>
+          </a>
+        </div>
       </div>
       <div class="for-frends__text">
         <b>Давайте дружить, это выгодно!</b><br>
@@ -139,12 +163,16 @@
     <form class="modal-window__login-form" action="#" method="post">
       <fieldset class="modal-window__user-name">
         <legend><label class="" for="user-login"><b>Ваше имя:</b></label></legend>
-        <input class="modal-window__input_user" id="user-login" type="text" name="login" placeholder="Представтесь, пожалуйста">
+        <input class="modal-window__input_user" id="user-login" type="text" name="login"
+          placeholder="Представтесь, пожалуйста">
       </fieldset>
-      <button class="modal-window__close">X</button>
+
+      <button class="modal-window__close-btn"></button>
+
       <fieldset class="modal-window__user-mail">
         <legend><label class="" for="user-email"><b>Ваш e-mail:</b></label></legend>
-        <input class="modal-window__input_email" id="user-email" type="email" name="email" placeholder="Для отправки ответа">
+        <input class="modal-window__input_email" id="user-email" type="email" name="email" pattern="[0-9]{6}"
+          placeholder="Для отправки ответа">
       </fieldset>
       <fieldset class="modal-window__text-area">
         <legend><label for="textarea"><b>Текст письма:</b></label></legend>
