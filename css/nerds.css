@@ -187,10 +187,6 @@ hr {
     justify-content: space-between;
 }
 
-.service .button {
-    color: white;
-}
-
 .item__btn--web-sites {
     margin-left: 20px;
 }
@@ -199,12 +195,16 @@ hr {
     margin-right: 80px;
 }
 
+.service__btn--web-sites, .service__btn--applications, .service__btn--presentation {
+    color: white
+}
+
 .service__btn--web-sites {
     background-color: #fb565a;
 }
 
 .service__btn--applications {
-    background-color: #00ca74
+    background-color: #00ca74;
 }
 
 .service__btn--presentation {
@@ -432,7 +432,7 @@ hr {
 
 .filter__field-greed, .filter__field-cost {
     width: 260px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .filter__field-features {
@@ -521,12 +521,12 @@ hr {
     display: flex;
     margin-right: 20px;
     margin-left: 140px;
-    width: 780px;
+    width: 760px;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.products .products__sorting-box {
+.products__sorting-box {
     width: 760px;
     display: flex;
     justify-content: space-between;
@@ -536,43 +536,50 @@ hr {
 .sorting-box__controls {
     display: flex;
     width: 360px;
+    margin-left: 40px;
+}
+
+.sorting-box__title p {
+    width: 360px;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0px;
+    font-weight: bold;
+    vertical-align: middle;
 }
 
 .sorting-box__title {
-    width: 360px;
-}
-
-.sorting-box__title .title {
     margin-top: 0px;
 }
 
-.sorting-box__controls .controls__item {
+.controls__item {
     padding: 0;
     margin: 0;
     border: 0;
-    margin-right: 20px;
+    margin-left: 20px;
     text-transform: uppercase;
     background-color: white;
+    font-size: 14px;
 }
 
-.controls__arrows .arrow {
+.controls__item:nth-of-type(1) {
+    margin: 0;
+}
+
+.arrow {
     padding: 0;
     border: 0;
-    margin: auto 9px;
-    width: 15px;
-    height: 15px;
+    margin: auto 0;
+    width: 10px;
+    height: 10px;
+    background-color: white;
 }
 
 .controls__arrows {
-    margin-left: auto;
+    margin-left: 45px;
     display: flex;
     justify-content: space-between;
     width: 43px;
-    background-color: white;
-}
-
-.arrow--down, .arrow--up {
-    margin: auto 0;
 }
 
 .catalog__item {
@@ -582,7 +589,7 @@ hr {
 .catalog__item a {
     display: flex;
     flex-direction: column;
-    margin-top: 60px;
+    margin-top: 55px;
 }
 
 .catalog__item:hover .item__browser-img {
