@@ -694,6 +694,10 @@ hr {
     background-color: white;
 }
 
+.modal-show {
+    display: block;
+}
+
 .modal-winow__title {
     font-size: 45px;
     margin: 0;
