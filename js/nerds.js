@@ -1,6 +1,6 @@
-<script> 
+
     var link = document.querySelector(".conacts__btn");
-    var popup = document.querySelector(".modal-widow");
+    var popup = document.querySelector(".modal-window");
     var close = document.querySelector(".modal-window__close-btn");
     var login = document.querySelector("[name=login]");
     var form = document.querySelector(".modal-window__login-form");
@@ -13,10 +13,11 @@
         console.log("Клик по ссылке напишите нам");
         evt.preventDefault();
         popup.classList.add("modal-show");
-        login.focus();
         if (storage) {
             login.value = storage;
-}
+             } else {
+            login.focus();
+            }
     });
 
     close.addEventListener("click", function (evt) {
@@ -37,11 +38,10 @@
         }
     });
 
-        widow.addEventListener("keydown", function (evt)) {
+        window.addEventListener("keydown", function (evt) {
             if (evt.keyCode === 27) {
                 if (popup.classList.contains("modal-show")) {
                     popup.classList.remove("modal-show");
                 }
             }
-    });
-</script>    
+    });  
