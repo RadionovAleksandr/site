@@ -13,7 +13,7 @@
     <header class="header">
         <div class="header__logo">
             <a href="nerds_main.html">
-                <img src="img-nerds/nerds-logo.png" width="160" height="65" alt="Логотип Нёрдс">
+                <img src="img-nerds/nerds-logo.png" alt="Логотип Нёрдс">
             </a>
         </div>
         <nav class="header__navigation">
@@ -30,19 +30,31 @@
     <main>
         <section class="advantages">
             <div class="advantages__slider">
-                <div class="slider__text">
-                    <h1 class="slider-title">Долго, дорого, скрупулезно.</h1>
+                <div class="slider__text slider__text--1">
+                    <h1 class="slider-title slider__text--1">Долго, дорого, скрупулезно.</h1>
                     <p>Математически выверенный дизайн<br> для вашео сайта или мобильного приложения</p>
                     <a class="slider__button button" href="#">Узнать больше</a>
                 </div>
-                <div class="slider__img">
-                    <div class="slider__switch">
-                        <button class="slider__switch__btn"></button>
-                        <button class="slider__switch__btn"></button>
-                        <button class="slider__switch__btn"></button>
-                    </div>
-                    <img src="img-nerds/slide1.png" width="697" height="412" alt="слайдер№1">
+                <div class="slider__text slider__text--2">
+                    <h1 class="slider-title">Любим математику<br> как никто другой.</h1>
+                    <p>Никакого креатива только математические формулы<br>для расчета идеальных пропорций</p>
+                    <a class="slider__button button" href="#">Узнать больше</a>
                 </div>
+                <div class="slider__text slider__text--3">
+                    <h1 class="slider-title">Только ночь<br> только хардкор.</h1>
+                    <p>Работать днем как все? мы против этого.<br>Ближе к полуночи работа только начинается</p>
+                    <a class="slider__button button" href="#">Узнать больше</a>
+                </div>
+
+                <div class="slider__switch">
+                    <button class="slider__switch__btn slider__switch__btn--1"></button>
+                    <button class="slider__switch__btn slider__switch__btn--2"></button>
+                    <button class="slider__switch__btn slider__switch__btn--3"></button>
+                </div>
+                <img class="slider-img--1" src="img-nerds/slide1.png" alt="слайдер1">
+                <img class="slider-img--2" src="img-nerds/slide2.png" alt="слайдер2">
+                <img class="slider-img--3" src="img-nerds/slide3.png" alt="слайдер2">
+
             </div>
         </section>
         <section class="service">
@@ -71,14 +83,18 @@
         </section>
         <section class="information">
             <div class="information__about-us">
-                <b class="information__text--big">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+                <div class="information__text--big">
+                    <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+                </div>
                 <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше креатива.
                     Работаем не
                     покладая рук, как роботы.</p>
-                <strong class="about-us__order-text">Выполняем заказы на разработку:</strong>
-                <p><span class="about-us__defis">—</span>Веб сайтов любой сложности</p>
-                <p><span class="about-us__defis">—</span>Мобильных приложений для IOS и Android</p>
-                <p><span class="about-us__defis">—</span>Слайд шоу и видео для корпоративных организаций</p>
+                <p class="about-us__order-text"><strong>Выполняем заказы на разработку:</strong></p>
+                <p class="order-text__text"><span class="about-us__defis">—</span>Веб сайтов любой сложности</p>
+                <p class="order-text__text"><span class="about-us__defis">—</span>Мобильных приложений для IOS и Android
+                </p>
+                <p class="order-text__text"><span class="about-us__defis">—</span>Слайд шоу и видео для корпоративных
+                    организаций</p>
             </div>
             <div class="information__counter">
                 <img src="img-nerds/nerds-illustrationpresentation.png" alt="Иллюстрация">
@@ -113,8 +129,9 @@
     </main>
     <footer class="footer">
         <div class="footer__map">
-            <a href="map.html"><img src="img-nerds/Map.jpg" alt="Карта"></a>
-
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533252!2d30.32085871585195!3d59.938716481876185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1553653396543"
+                width="1440" height="420" frameborder="0" style="border:0" allowfullscreen></iframe>
             <div class="footer__contacts">
                 <p class="contacts__organization-name"><b>Nerds design studio</b></p>
                 <p class="contacts__organization-addres">191186, Санкт петербург,<br> ул.Б.Конюшенная, д. 19/8</p>
@@ -125,32 +142,23 @@
         <div class="footer__for-frends">
             <div class="for-frends__social-web">
                 <div>
-                    <a class="for-frends__social-button" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26"
-                            height="15">
-                            <image width="26" height="15"
-                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAPCAQAAABQWBdtAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjAxgQGRgaQ1QSAAABF0lEQVQoz42QIUuDYRSFn09YEUEGgggyMGgWhoJFJyqIYDAbRLAMTCaT2WITtKnBPsEfoBYxCKYFy5qKQaa4wcbmY9j2+e4Lc6edw33Ofe8bucw4ADWuoio4xRkzpIAGD6xFXwBGLDEEwCBvWLGjEwCHPfBP8wDgRpDV8Tg2FUdarb7HWa4N3QbQJWasx/awPfLUDZkLkKoTgKfBrkwCyoID3gdQvtUb7ioAWIz9NLgbIAUj2s85CptM+R27dbNWY1cyTUemg9ObPgYVL8Hv/jhHKLf8X890y8jrPrCdJDbqax9YPonNBid39OGFzd7bFv1MQPvgZlfScCGJTXrXNbIK4F7PDwFwxXOLli1bcqydbccX17z5Bb45CoW7amS6AAAAAElFTkSuQmCC" />
-                        </svg>
+                    <a class="for-frends__social-web-button for-frends__social-web-button--vk" href="#">
+                        <img class="social-web-button__img social-web-button__img--vk" src="img-nerds/vk-icon.png"
+                            alt="иконка вконтакте">
                         <span class="visually-hidden">Вконтакте</span>
                     </a>
                 </div>
                 <div>
-                    <a class="for-frends__social-button" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12"
-                            height="22">
-                            <image width="12" height="22"
-                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAWCAQAAABeMbWRAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjAxgQGhA/tY/jAAAAVElEQVQoz2NggIP/Bv93/v/1HwqQhb/9RwIIiZ3/UQAjXOIXAysDEoBK/Gdk+AcVUWD4iKyAAW6GAITPxIAD4JRgRHIYcTrIsQPqPIb3NPPH4JQAAMxOR+EfSfRoAAAAAElFTkSuQmCC" />
-                        </svg>
+                    <a class="for-frends__social-web-button for-frends__social-web-button--fb" href="#">
+                        <img class="social-web-button__img social-web-button__img--fb" src="img-nerds/fb-icon.png"
+                            alt="иконка фейсбука">
                         <span class="visually-hidden">Фейсбук</span>
                     </a>
                 </div>
                 <div>
-                    <a class="for-frends__social-button" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21"
-                            height="21">
-                            <image width="21" height="21"
-                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAQAAAADHm0dAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjAxgQGilgsAfrAAAAz0lEQVQoz6WTPW7CQBBG31oIRVTmBEnFEcwVfEl3FgdwAZdCGCqnykvhfwPWRplmVvM9zc/uLO4sbFy3xsIdFsZZEWz4IMa+g67IXzwAqAE2q5ke4Q7QZkuiiv8fvXBkz5ELULfDd8riSs6GLh48z6Ue/fSqajamN1P1ajpH095P0D6WdG5QagAOk67bcx1+5r2mVm96rXpmRPNhsMzUbBgqf0LB8sWSlGPlKbp9gku3L1EAcytv6s3KnNk8C7STFm/YIn/Y14RT5LaciP9bv6UMlLD8vPvAAAAAAElFTkSuQmCC" />
-                        </svg>
+                    <a class="for-frends__social-web-button for-frends__social-web-button--insta" href="#">
+                        <img class="social-web-button__img social-web-button__img--insta" src="img-nerds/insta-icon.png"
+                            alt="иконка инстаграмма">
                         <span class="visually-hidden">Инстаграмм</span>
                     </a>
                 </div>
@@ -164,25 +172,24 @@
     </footer>
     <section class="modal-window">
         <h2 class="modal-winow__title">Напишите нам</h2>
+        <button class="modal-window__close-btn"></button>
         <form class="modal-window__login-form" action="#" method="post">
             <fieldset class="modal-window__user-name">
                 <legend><label class="" for="user-login"><b>Ваше имя:</b></label></legend>
                 <input class="modal-window__input_user" id="user-login" type="text" name="login"
                     placeholder="Представтесь, пожалуйста">
             </fieldset>
-
-            <button class="modal-window__close-btn"></button>
-
             <fieldset class="modal-window__user-mail">
                 <legend><label class="" for="user-email"><b>Ваш e-mail:</b></label></legend>
-                <input class="modal-window__input_email" id="user-email" type="email" name="email" pattern="[0-9]{6}"
+                <input class="modal-window__input_email" id="user-email" type="email" name="email"
                     placeholder="Для отправки ответа">
             </fieldset>
             <fieldset class="modal-window__text-area">
                 <legend><label for="textarea"><b>Текст письма:</b></label></legend>
-                <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+                <textarea class="text-letter" name="textarea" id="textarea" cols="30" rows="10"
+                    placeholder="В свободной форме"></textarea>
             </fieldset>
-            <a class="modal-window__btn button" href="#">Отправить</a>
+            <button class="modal-window__btn button" type="submit">Отправить</a>
         </form>
     </section>
     <script src="js/nerds.js"></script>

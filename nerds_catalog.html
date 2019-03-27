@@ -13,7 +13,7 @@
     <header class="header">
         <div class="header__logo">
             <a href="nerds_main.html">
-                <img src="img-nerds/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс" />
+                <img src="img-nerds/nerds-logo.svg" alt="Логотип Нёрдс" />
             </a>
         </div>
         <nav class="header__navigation">
@@ -23,8 +23,7 @@
             <a href="#.html">контакты</a>
         </nav>
         <div class="header__basket">
-            <a href="#"><img src="img-nerds/cart-icon-my-opim.svg" width="15" height="15"
-                    alt="Корзина покупок">корзина</a>
+            <a href="#"><img src="img-nerds/cart-icon-my-opim.svg" alt="Корзина покупок">корзина</a>
         </div>
 
     </header>
@@ -53,12 +52,12 @@
                             <li class="filter__radio-item">
                                 <input class="visually-hidden" id="filter__radio-adaptiv-btn" type="radio"
                                     name="product-group" value="adaptiv">
-                                <Label for="filter__radio-adaptiv-btn">адаптивная</Label>
+                                <label for="filter__radio-adaptiv-btn">адаптивная</label>
                             </li>
                             <li class="filter__radio-item">
                                 <input class="visually-hidden" id="filter__radio-fix-btn" type="radio"
                                     name="product-group" value="fixed">
-                                <Label for="filter__radio-fix-btn">фиксированная</Label>
+                                <label for="filter__radio-fix-btn">фиксированная</label>
                             </li>
                             <li>
                                 <p>резиновая</p>
@@ -71,33 +70,34 @@
                             <li class="filter__checkbox-item">
                                 <input class="visually-hidden" id="filter__checbox-spider-btn" type="checkbox"
                                     name="slaider">
-                                <Label for="filter__checbox-spider-btn">Слайдер</Label>
+                                <label for="filter__checbox-spider-btn">Слайдер</label>
                                 <span class="checkbox-indicator"></span>
 
                             </li>
                             <li class="filter__checkbox-item">
-                                <input class="visually-hidden" id="filter__advantages-checbox-btn" type="checkbox"
-                                    name="advantages">
-                                <Label for="filter__advantages-checbox-btn">Блок преимуществ</Label>
+                                <input
+                                    class="visuall                                        nnnnnnnnnnnnnnnnnnnnny-hidden"
+                                    id="filter__advantages-checbox-btn" type="checkbox" name="advantages">
+                                <label for="filter__advantages-checbox-btn">Блок преимуществ</label>
                                 <span class="checkbox-indicator"></span>
 
                             </li>
                             <li class="filter__checkbox-item">
                                 <input class="visually-hidden form__input" id="filter__cnews-btn" type="checkbox"
                                     name="news">
-                                <Label for="filter__cnews-btn">Новости</Label>
+                                <label for="filter__cnews-btn">Новости</label>
                                 <span class="checkbox-indicator"></span>
                             </li>
                             <li class="filter__checkbox-item">
                                 <input class="visually-hidden form__input" id="filter__cgallery-btn" type="checkbox"
                                     name="gallery">
-                                <Label for="filter__cgallery-btn">Галерея</Label>
+                                <label for="filter__cgallery-btn">Галерея</label>
                                 <span class="checkbox-indicator"></span>
                             </li>
                             <li class="filter__checkbox-item">
                                 <input class="visually-hidden form__input" id="filter__cbasket-btn" type="checkbox"
                                     name="basket">
-                                <Label for="filter__cbasket-btn">Корзина</Label>
+                                <label for="filter__cbasket-btn">Корзина</label>
                                 <span class="checkbox-indicator"></span>
                             </li>
                         </ul>
@@ -110,8 +110,8 @@
             <section class="products">
                 <h2 class="visually-hidden">Каталог шаблонов</h2>
                 <div class="products__sorting-box">
-                    <div class="sorting-box__title">
-                        <p class="title">Cортировать:</p>
+                    <div>
+                        <p class="sorting-box__title">Cортировать:</p>
                     </div>
                     <div class="sorting-box__controls">
                         <button class="controls__item">По цене</button>
@@ -126,49 +126,55 @@
                     </div>
                 </div>
                 <div class="catalog">
-                    <div class="catalog__item"><a href="#"><img class="item__browser-img" src="img-nerds/browser.svg"
-                                alt=""><img src="img-nerds/img-sedona.jpg" alt="Седона"></a>
-                        <div class="item__modal-price">
+                    <div class="catalog__card"><a class="catalog__card-click-field" href="#"><img
+                                class="card__browser-img" src="img-nerds/browser.svg" alt=""><img
+                                src="img-nerds/img-sedona.jpg" alt="Седона"></a>
+                        <div class="catalog__modal-window-card">
                             <b>SEDONA</b>
                             <p>Информационный сайт<br>для туристов</p>
                             <a class="button button-price" href="#">9 900 РУБ</a>
                         </div>
                     </div>
-                    <div class="catalog__item"><a href="#"><img class="item__browser-img" src="img-nerds/browser.svg"
-                                alt=""><img src="img-nerds/img-pink.jpg" alt="Пинк"></a>
-                        <div class="item__modal-price">
+                    <div class="catalog__card"><a class="catalog__card-click-field" href="#"><img
+                                class="card__browser-img" src="img-nerds/browser.svg" alt=""><img
+                                src="img-nerds/img-pink.jpg" alt="Пинк"></a>
+                        <div class="catalog__modal-window-card">
                             <b>SEDONA</b>
                             <p>Информационный сайт<br>для туристов</p>
                             <a class="button button-price" href="#">9 900 РУБ</a>
                         </div>
                     </div>
-                    <div class="catalog__item"><a href="#"><img class="item__browser-img" src="img-nerds/browser.svg"
-                                alt=""><img src="img-nerds/img-barbershop.jpg" alt="Бородинский"></a>
-                        <div class="item__modal-price">
+                    <div class="catalog__card"><a class="catalog__card-click-field" href="#"><img
+                                class="card__browser-img" src="img-nerds/browser.svg" alt=""><img
+                                src="img-nerds/img-barbershop.jpg" alt="Бородинский"></a>
+                        <div class="catalog__modal-window-card">
                             <b>SEDONA</b>
                             <p>Информационный сайт<br>для туристов</p>
                             <a class="button button-price" href="#">9 900 РУБ</a>
                         </div>
                     </div>
-                    <div class="catalog__item"><a href="#"><img class="item__browser-img" src="img-nerds/browser.svg"
-                                alt=""><img src="img-nerds/img-mishka.jpg" alt="Мишка"></a>
-                        <div class="item__modal-price">
+                    <div class="catalog__card"><a class="catalog__card-click-field" href="#"><img
+                                class="card__browser-img" src="img-nerds/browser.svg" alt=""><img
+                                src="img-nerds/img-mishka.jpg" alt="Мишка"></a>
+                        <div class="catalog__modal-window-card">
                             <b>SEDONA</b>
                             <p>Информационный сайт<br>для туристов</p>
                             <a class="button button-price" href="#">9 900 РУБ</a>
                         </div>
                     </div>
-                    <div class="catalog__item"><a href="#"><img class="item__browser-img" src="img-nerds/browser.svg"
-                                alt=""><img src="img-nerds/img-aplus.jpg" alt="А+"></a>
-                        <div class="item__modal-price">
+                    <div class="catalog__card"><a class="catalog__card-click-field" href="#"><img
+                                class="card__browser-img" src="img-nerds/browser.svg" alt=""><img
+                                src="img-nerds/img-aplus.jpg" alt="А+"></a>
+                        <div class="catalog__modal-window-card">
                             <b>SEDONA</b>
                             <p>Информационный сайт<br>для туристов</p>
                             <a class="button button-price" href="#">9 900 РУБ</a>
                         </div>
                     </div>
-                    <div class="catalog__item"><a href="#"><img class="item__browser-img" src="img-nerds/browser.svg"
-                                alt=""><img src="img-nerds/img-kvast.jpg" alt="Кваст"></a>
-                        <div class="item__modal-price">
+                    <div class="catalog__card"><a class="catalog__card-click-field" href="#"><img
+                                class="card__browser-img" src="img-nerds/browser.svg" alt=""><img
+                                src="img-nerds/img-kvast.jpg" alt="Кваст"></a>
+                        <div class="catalog__modal-window-card">
                             <b class="catalog__product-name">SEDONA</b>
                             <p class="catalog__product-text">Информационный сайт<br>для туристов</p>
                             <a class="button button-price" href="#">9 900 РУБ</a>
@@ -176,7 +182,8 @@
                     </div>
                 </div>
                 <ul class="pagination-list">
-                    <li class="pagination-list__item pagination-list__item--current"><a href="#">1</a></li>
+                    <li class="pagination-list__item pagination-list__item--current"><a
+                            class="pagination-list__click-field" href="#">1</a></li>
                     <li class="pagination-list__item"><a href="#">2</a></li>
                     <li class="pagination-list__item"><a href="#">3</a></li>
                     <li class="pagination-list__item pagination-list__item--next"><a href="#">следующая</a></li>
@@ -186,8 +193,9 @@
     </main>
     <footer class="footer">
         <div class="footer__map">
-            <a href="map.html"><img src="img-nerds/Map.jpg" alt="Карта"></a>
-
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533252!2d30.32085871585195!3d59.938716481876185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1553653396543"
+                width="1440" height="420" frameborder="0" style="border:0" allowfullscreen></iframe>
             <div class="footer__contacts">
                 <p class="contacts__organization-name"><b>Nerds design studio</b></p>
                 <p class="contacts__organization-addres">191186, Санкт петербург,<br> ул.Б.Конюшенная, д. 19/8</p>
@@ -198,32 +206,23 @@
         <div class="footer__for-frends">
             <div class="for-frends__social-web">
                 <div>
-                    <a class="for-frends__social-button" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26"
-                            height="15">
-                            <image width="26" height="15"
-                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAPCAQAAABQWBdtAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjAxgQGRgaQ1QSAAABF0lEQVQoz42QIUuDYRSFn09YEUEGgggyMGgWhoJFJyqIYDAbRLAMTCaT2WITtKnBPsEfoBYxCKYFy5qKQaa4wcbmY9j2+e4Lc6edw33Ofe8bucw4ADWuoio4xRkzpIAGD6xFXwBGLDEEwCBvWLGjEwCHPfBP8wDgRpDV8Tg2FUdarb7HWa4N3QbQJWasx/awPfLUDZkLkKoTgKfBrkwCyoID3gdQvtUb7ioAWIz9NLgbIAUj2s85CptM+R27dbNWY1cyTUemg9ObPgYVL8Hv/jhHKLf8X890y8jrPrCdJDbqax9YPonNBid39OGFzd7bFv1MQPvgZlfScCGJTXrXNbIK4F7PDwFwxXOLli1bcqydbccX17z5Bb45CoW7amS6AAAAAElFTkSuQmCC" />
-                        </svg>
+                    <a class="for-frends__social-web-button for-frends__social-web-button--vk" href="#">
+                        <img class="social-web-button__img social-web-button__img--vk" src="img-nerds/vk-icon.png"
+                            alt="иконка вконтакте">
                         <span class="visually-hidden">Вконтакте</span>
                     </a>
                 </div>
                 <div>
-                    <a class="for-frends__social-button" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12"
-                            height="22">
-                            <image width="12" height="22"
-                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAWCAQAAABeMbWRAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjAxgQGhA/tY/jAAAAVElEQVQoz2NggIP/Bv93/v/1HwqQhb/9RwIIiZ3/UQAjXOIXAysDEoBK/Gdk+AcVUWD4iKyAAW6GAITPxIAD4JRgRHIYcTrIsQPqPIb3NPPH4JQAAMxOR+EfSfRoAAAAAElFTkSuQmCC" />
-                        </svg>
+                    <a class="for-frends__social-web-button for-frends__social-web-button--fb" href="#">
+                        <img class="social-web-button__img social-web-button__img--fb" src="img-nerds/fb-icon.png"
+                            alt="иконка фейсбука">
                         <span class="visually-hidden">Фейсбук</span>
                     </a>
                 </div>
                 <div>
-                    <a class="for-frends__social-button" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21"
-                            height="21">
-                            <image width="21" height="21"
-                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAQAAAADHm0dAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjAxgQGilgsAfrAAAAz0lEQVQoz6WTPW7CQBBG31oIRVTmBEnFEcwVfEl3FgdwAZdCGCqnykvhfwPWRplmVvM9zc/uLO4sbFy3xsIdFsZZEWz4IMa+g67IXzwAqAE2q5ke4Q7QZkuiiv8fvXBkz5ELULfDd8riSs6GLh48z6Ue/fSqajamN1P1ajpH095P0D6WdG5QagAOk67bcx1+5r2mVm96rXpmRPNhsMzUbBgqf0LB8sWSlGPlKbp9gku3L1EAcytv6s3KnNk8C7STFm/YIn/Y14RT5LaciP9bv6UMlLD8vPvAAAAAAElFTkSuQmCC" />
-                        </svg>
+                    <a class="for-frends__social-web-button for-frends__social-web-button--insta" href="#">
+                        <img class="social-web-button__img social-web-button__img--insta" src="img-nerds/insta-icon.png"
+                            alt="иконка инстаграмма">
                         <span class="visually-hidden">Инстаграмм</span>
                     </a>
                 </div>
@@ -237,25 +236,23 @@
     </footer>
     <section class="modal-window">
         <h2 class="modal-winow__title">Напишите нам</h2>
+        <button class="modal-window__close-btn"></button>
         <form class="modal-window__login-form" action="#" method="post">
             <fieldset class="modal-window__user-name">
                 <legend><label class="" for="user-login"><b>Ваше имя:</b></label></legend>
                 <input class="modal-window__input_user" id="user-login" type="text" name="login"
                     placeholder="Представтесь, пожалуйста">
             </fieldset>
-
-            <button class="modal-window__close-btn"></button>
-
             <fieldset class="modal-window__user-mail">
                 <legend><label class="" for="user-email"><b>Ваш e-mail:</b></label></legend>
-                <input class="modal-window__input_email" id="user-email" type="email" name="email" pattern="[0-9]{6}"
+                <input class="modal-window__input_email" id="user-email" type="email" name="email"
                     placeholder="Для отправки ответа">
             </fieldset>
             <fieldset class="modal-window__text-area">
                 <legend><label for="textarea"><b>Текст письма:</b></label></legend>
                 <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="В свободной форме"></textarea>
             </fieldset>
-            <a class="modal-window__btn button" href="#">Отправить</a>
+            <button class="modal-window__btn button" type="submit">Отправить</a>
         </form>
     </section>
     <script src="js/nerds.js"></script>
