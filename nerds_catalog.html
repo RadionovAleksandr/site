@@ -12,7 +12,7 @@
 <body>
     <header class="header">
         <div class="header__logo">
-            <a href="nerds_main.html">
+            <a href="index.html">
                 <img src="img-nerds/nerds-logo.svg" alt="Логотип Нёрдс" />
             </a>
         </div>
@@ -75,9 +75,7 @@
 
                             </li>
                             <li class="filter__checkbox-item">
-                                <input
-                                    class="visuall                                        nnnnnnnnnnnnnnnnnnnnny-hidden"
-                                    id="filter__advantages-checbox-btn" type="checkbox" name="advantages">
+                                <input class="visually-hidden form__input" id="filter__advantages-checbox-btn" type="checkbox" name="advantages">
                                 <label for="filter__advantages-checbox-btn">Блок преимуществ</label>
                                 <span class="checkbox-indicator"></span>
 
@@ -235,26 +233,27 @@
         </div>
     </footer>
     <section class="modal-window">
-        <h2 class="modal-winow__title">Напишите нам</h2>
-        <button class="modal-window__close-btn"></button>
-        <form class="modal-window__login-form" action="#" method="post">
-            <fieldset class="modal-window__user-name">
-                <legend><label class="" for="user-login"><b>Ваше имя:</b></label></legend>
-                <input class="modal-window__input_user" id="user-login" type="text" name="login"
-                    placeholder="Представтесь, пожалуйста">
-            </fieldset>
-            <fieldset class="modal-window__user-mail">
-                <legend><label class="" for="user-email"><b>Ваш e-mail:</b></label></legend>
-                <input class="modal-window__input_email" id="user-email" type="email" name="email"
-                    placeholder="Для отправки ответа">
-            </fieldset>
-            <fieldset class="modal-window__text-area">
-                <legend><label for="textarea"><b>Текст письма:</b></label></legend>
-                <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-            </fieldset>
-            <button class="modal-window__btn button" type="submit">Отправить</a>
-        </form>
-    </section>
+            <h2 class="modal-winow__title">Напишите нам</h2>
+            <button class="modal-window__close-btn"></button>
+            <form class="modal-window__login-form" action="#" method="post">
+                <fieldset class="modal-window__user-name">
+                    <legend><label class="" for="user-login"><b>Ваше имя:</b></label></legend>
+                    <input class="modal-window__input_user" id="user-login" type="text" name="login"
+                        placeholder="Представтесь, пожалуйста">
+                </fieldset>
+                <fieldset class="modal-window__user-mail">
+                    <legend><label class="" for="user-email"><b>Ваш e-mail:</b></label></legend>
+                    <input class="modal-window__input_email" id="user-email" type="email" name="email"
+                        placeholder="Для отправки ответа">
+                </fieldset>
+                <fieldset class="modal-window__text-area">
+                    <legend><label for="textarea"><b>Текст письма:</b></label></legend>
+                    <textarea class="text-letter" name="textarea" id="textarea" cols="30" rows="10"
+                        placeholder="В свободной форме"></textarea>
+                </fieldset>
+                <button class="modal-window__btn button" type="submit">Отправить</a>
+            </form>
+        </section>
     <script src="js/nerds.js"></script>
 </body>
 
