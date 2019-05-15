@@ -1,5 +1,6 @@
 html {
     width: 1440px;
+    margin: 0 auto;
 }
 
 body {
@@ -256,12 +257,6 @@ hr {
     z-index: 1;
 }
 
-/*не грузиться картинка*/
-
-.slider__switch__btn--visited {
-    background-image: url("../img-nerds/active-button.svg");
-}
-
 .slider__switch__btn {
     width: 20px;
     height: 20px;
@@ -270,6 +265,10 @@ hr {
     background-color: white;
     border-radius: 50%;
     outline: 0;
+}
+
+.slider__switch__btn--visited {
+    border: 2px solid #777474;
 }
 
 .service__wrap {

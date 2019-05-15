@@ -16,10 +16,6 @@ var slideText3 = document.querySelector(".slider__text--3");
 var slideImg1 = document.querySelector(".slider-img--1");
 var slideImg2 = document.querySelector(".slider-img--2");
 var slideImg3 = document.querySelector(".slider-img--3");
-var btnVisited = document.querySelector(".slider__switch__btn--visited");
-var slideButtons = document.querySelectorAll('.slider__switch__btn');
-var slideImages = document.querySelectorAll('.slider-img');
-var slideTexts = document.querySelectorAll('.slider__text');
 var slide1 = document.querySelectorAll('.slide__1');
 var slide2 = document.querySelectorAll('.slide__2');
 var slide3 = document.querySelectorAll('.slide__3');
@@ -44,12 +40,13 @@ dataSlide3 = {
 }
 var slider = [dataSlide1, dataSlide2, dataSlide3];
 
-
-
 var sliderActive = function(curenSlider, numberDisableFirst, numberDisabledSecond) {
+  curenSlider.classList.remove("visually-hidden");
   curenSlider.classList.add("slider-show");
-  numberDisableFirst.classList.add('hidden');
+  numberDisableFirst.classList.remove("slider-show");
+  numberDisableFirst.classList.add('visually-hidden');
   numberDisabledSecond.classList.add('hidden');
+  numberDisabledSecond.classList.remove("slider-show");
 };
 
 var buttonActive = function (curenButton, buttonDisableFirst, buttonDisabledSecond) {
@@ -58,84 +55,26 @@ var buttonActive = function (curenButton, buttonDisableFirst, buttonDisabledSeco
   buttonDisabledSecond.classList.remove("slider__switch__btn--visited")
 }
 
-console.log(slide1[2])
 slideBtn1.addEventListener("click", function() {
 
   buttonActive(slideBtn1, slideBtn2, slideBtn3)
-  for(var i = 0; i < 2; i++) {
-  sliderActive(slide1[i], slide2[i], slide3[i])
-  }
+  sliderActive(dataSlide1.image, dataSlide2.image, dataSlide3.image)
+  sliderActive(dataSlide1.text, dataSlide2.text, dataSlide3.text)
 });
 
 slideBtn2.addEventListener("click", function() {
 
   buttonActive(slideBtn2, slideBtn1, slideBtn3)
-  sliderActive(slide2, slide1, slide3)
+  sliderActive(dataSlide2.image, dataSlide1.image, dataSlide3.image)
+  sliderActive(dataSlide2.text, dataSlide1.text, dataSlide3.text)
 });
 
 slideBtn3.addEventListener("click", function() {
 
-  buttonActive(slideBtn3, slideBtn2, slideBtn1)
-  sliderActive(slide3, slide1, slide2)
+  buttonActive(slideBtn3, slideBtn1, slideBtn2)
+  sliderActive(dataSlide3.image, dataSlide1.image, dataSlide2.image)
+  sliderActive(dataSlide3.text, dataSlide1.text, dataSlide2.text)
 });
-
-
-/*
-  slide3.classList.remove("slider-show");
-  slideImg3.classList.remove("slider-show");
-  slideBtn3.classList.remove("slider__switch__btn--visited")
-
-  slide1.classList.add("slider-show");
-  slide1.classList.remove("visually-hidden");
-  slideImg1.classList.add("slider-show");
-  slideImg1.classList.remove("visually-hidden");
-  slideBtn1.classList.add("slider__switch__btn--visited")
-
-  console.log("Активация кнопки слайдер1");
-});
-};
-
-
-slideBtn2.addEventListener("click", function(evt) {
-  console.log("Клик по ссылке по слайдеру2");
-  evt.preventDefault();
-
-  slide1.classList.remove("slider-show");
-  slide1.classList.add("visually-hidden");
-  slideImg1.classList.remove("slider-show");
-  slideImg1.classList.add("visually-hidden");
-  slideBtn1.classList.remove("slider__switch__btn--visited")
-
-  slide3.classList.remove("slider-show");
-  slideImg3.classList.remove("slider-show");
-  slideBtn3.classList.remove("slider__switch__btn--visited")
-
-  slide2.classList.add("slider-show");
-  slideImg2.classList.add("slider-show");
-  slideBtn2.classList.add("slider__switch__btn--visited")
-  console.log("Активация кнопки слайдер2");
-});
-
-slideBtn3.addEventListener("click", function(evt) {
-  console.log("Клик по ссылке по слайдеру2");
-  evt.preventDefault();
-
-  slide1.classList.remove("slider-show");
-  slide1.classList.add("visually-hidden");
-  slideImg1.classList.remove("slider-show");
-  slideImg1.classList.add("visually-hidden");
-  slideBtn1.classList.remove("slider__switch__btn--visited")
-
-  slide2.classList.remove("slider-show");
-  slideImg2.classList.remove("slider-show");
-  slideBtn2.classList.remove("slider__switch__btn--visited")
-
-  slide3.classList.add("slider-show");
-  slideImg3.classList.add("slider-show");
-  slideBtn3.classList.add("slider__switch__btn--visited")
-  console.log("Активация кнопки слайдер2");
-});
-
 
 link.addEventListener("click", function(evt) {
   console.log("Клик по ссылке напишите нам");
@@ -178,6 +117,3 @@ window.addEventListener("keydown", function(evt) {
     }
   }
 });
-
- 
-*/
