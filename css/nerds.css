@@ -8,7 +8,8 @@ body {
     color: #283136;
     text-align: left;
     outline: none;
-    /*проверить свойство*/
+    margin: 0 auto;
+    width: 100%;
 }
 
 img {
@@ -22,7 +23,8 @@ fieldset {
     margin: 0;
 }
 
-ul, li {
+ul,
+li {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -56,44 +58,69 @@ hr {
     justify-content: flex-start;
 }
 
-.service__btn--applications:hover, .service__btn--applications:focus {
+.service__btn--applications:hover,
+.service__btn--applications:focus {
     background-color: #00bc6c;
 }
 
-.header__navigation a:hover, .header__navigation a:focus, .header__basket a:hover, .header__basket a:focus {
+.header__navigation a:hover,
+.header__navigation a:focus,
+.header__basket a:hover,
+.header__basket a:focus {
     color: #fb565a;
 }
 
-.slider__button:hover, .slider__button:focus, .service__btn--web-sites:hover, .service__btn--web-sites:focus, .footer__conacts_btn:hover, .footer__conacts_btn:focus, .modal-window__btn:hover, .modal-window__btn:focus, .conacts__btn:hover, .conacts__btn:focus {
+.slider__button:hover,
+.slider__button:focus,
+.service__btn--web-sites:hover,
+.service__btn--web-sites:focus,
+.footer__conacts_btn:hover,
+.footer__conacts_btn:focus,
+.modal-window__btn:hover,
+.modal-window__btn:focus,
+.conacts__btn:hover,
+.conacts__btn:focus {
     background-color: #e74246;
 }
 
-.service__btn--presentation:hover, .service__btn--presentation:focus {
+.service__btn--presentation:hover,
+.service__btn--presentation:focus {
     background-color: #eab534;
 }
 
-.service__btn--applications:hover, .service__btn--applications:focus {
+.service__btn--applications:hover,
+.service__btn--applications:focus {
     background-color: #00bc6c;
 }
 
-.header__navigation a:active, .header__basket a:active {
+.header__navigation a:active,
+.header__basket a:active {
     color: rgba(0, 0, 0, 0.3)
 }
 
-.slider__button:active, .service__btn--web-sites:active, .footer__conacts_btn:active, .modal-window__btn:active, .item__btn--presentation:active, .item__btn--applications:active, .conacts__btn:active {
+.slider__button:active,
+.service__btn--web-sites:active,
+.footer__conacts_btn:active,
+.modal-window__btn:active,
+.item__btn--presentation:active,
+.item__btn--applications:active,
+.conacts__btn:active {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.pagination-list__item:hover, .pagination-list__item:focus {
+.pagination-list__item:hover,
+.pagination-list__item:focus {
     background-color: #dfdfdf;
     border: 3px solid #dfdfdf;
 }
 
-.filter__btn:hover, .filter__btn:focus {
+.filter__btn:hover,
+.filter__btn:focus {
     background-color: #dfdfdf;
 }
 
-.pagination-list__item:active .pagination-list__item-click-field, .filter__btn:active {
+.pagination-list__item:active .pagination-list__item-click-field,
+.filter__btn:active {
     opacity: 0.3;
 }
 
@@ -119,7 +146,8 @@ hr {
     margin-left: 180px;
 }
 
-.header__navigation a, .header__basket a {
+.header__navigation a,
+.header__basket a {
     color: #000000;
     font-weight: bold;
     text-transform: uppercase;
@@ -190,7 +218,10 @@ hr {
     bottom: 0px;
 }
 
-.slider__text--2, .slider__text--3, .slider-img--2, .slider-img--3 {
+.slider__text--2,
+.slider__text--3,
+.slider-img--2,
+.slider-img--3 {
     display: none;
 }
 
@@ -254,7 +285,9 @@ hr {
     margin-right: 80px;
 }
 
-.service__btn--web-sites, .service__btn--applications, .service__btn--presentation {
+.service__btn--web-sites,
+.service__btn--applications,
+.service__btn--presentation {
     color: white
 }
 
@@ -432,7 +465,9 @@ hr {
     height: 15px;
 }
 
-.for-frends__social-web-button--vk:active .social-web-button__img--vk, .for-frends__social-web-button--fb:active .social-web-button__img--fb, .for-frends__social-web-button--insta:active .social-web-button__img--insta {
+.for-frends__social-web-button--vk:active .social-web-button__img--vk,
+.for-frends__social-web-button--fb:active .social-web-button__img--fb,
+.for-frends__social-web-button--insta:active .social-web-button__img--insta {
     opacity: 0.3;
 }
 
@@ -446,7 +481,8 @@ hr {
     justify-content: center;
 }
 
-.for-frends__social-web-button:hover, .for-frends__social-web-button:active {
+.for-frends__social-web-button:hover,
+.for-frends__social-web-button:active {
     background-color: #e74246;
 }
 
@@ -498,7 +534,9 @@ hr {
     margin-top: 15px;
 }
 
-.filter__radio-item, .filter__radio-fix-btn, .filter__checkbox-item {
+.filter__radio-item,
+.filter__radio-fix-btn,
+.filter__checkbox-item {
     margin-top: 17px;
 }
 
@@ -510,7 +548,8 @@ hr {
     min-height: 205px;
 }
 
-.filter__field-greed, .filter__field-cost {
+.filter__field-greed,
+.filter__field-cost {
     width: 260px;
     margin-bottom: 40px;
 }
@@ -526,7 +565,8 @@ hr {
     font-weight: bold;
 }
 
-.filter__checkbox-item, .filter__radio-item {
+.filter__checkbox-item,
+.filter__radio-item {
     position: relative;
     padding-left: 30px;
 }
@@ -545,7 +585,8 @@ hr {
 
 /* чексбокс картинка */
 
-.filter__checkbox-item label:before, .filter__radio-item label::before {
+.filter__checkbox-item label:before,
+.filter__radio-item label::before {
     content: "";
     width: 25px;
     height: 25px;
@@ -720,7 +761,8 @@ hr {
     font-weight: bold;
 }
 
-.conacts__btn, .modal-window__btn {
+.conacts__btn,
+.modal-window__btn {
     color: white;
     background-color: #fb565a;
 }
@@ -787,11 +829,15 @@ hr {
     margin-bottom: 42px;
 }
 
-.modal-window__user-name, .modal-window__user-mail, .modal-window__text-area {
+.modal-window__user-name,
+.modal-window__user-mail,
+.modal-window__text-area {
     font-size: 16px;
 }
 
-.modal-window input[type="text"], .modal-window input[type="email"], .modal-window .text-letter {
+.modal-window input[type="text"],
+.modal-window input[type="email"],
+.modal-window .text-letter {
     padding-left: 15px;
 }
 
@@ -803,7 +849,8 @@ hr {
     margin-left: 40px;
 }
 
-.modal-window__input_user, .modal-window__input_email {
+.modal-window__input_user,
+.modal-window__input_email {
     box-sizing: border-box;
     width: 360px;
     height: 45px;
@@ -823,7 +870,9 @@ hr {
     border-radius: 3px;
 }
 
-.modal-window__input_user:hover, .modal-window__input_email:hover, .modal-window__text-area textarea:hover {
+.modal-window__input_user:hover,
+.modal-window__input_email:hover,
+.modal-window__text-area textarea:hover {
     color: #444444;
     border-color: #000000;
 }
@@ -840,7 +889,8 @@ hr {
     outline: none;
 }
 
-.modal-window__close-btn:hover, .modal-window__close-btn:focus {
+.modal-window__close-btn:hover,
+.modal-window__close-btn:focus {
     opacity: 1;
 }
 
@@ -848,7 +898,8 @@ hr {
     opacity: 0.1;
 }
 
-.modal-window__close-btn::before, .modal-window__close-btn::after {
+.modal-window__close-btn::before,
+.modal-window__close-btn::after {
     content: "";
     position: absolute;
     background-color: red;
