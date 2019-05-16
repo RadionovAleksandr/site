@@ -1,97 +1,96 @@
 
 (function() {
-  var link = document.querySelector(".conacts__btn");
-  var popup = document.querySelector(".modal-window");
-  var close = document.querySelector(".modal-window__close-btn");
-  var login = document.querySelector("[name=login]");
-  var form = document.querySelector(".modal-window__login-form");
-  var email = document.querySelector("[name=email]");
-  var textarea = document.querySelector("[name=textarea]");
-  var storage = localStorage.getItem("login");
-  var slideBtn1 = document.querySelector(".slider__switch__btn--1");
-  var slideBtn2 = document.querySelector(".slider__switch__btn--2");
-  var slideBtn3 = document.querySelector(".slider__switch__btn--3");
-  var slideText1 = document.querySelector(".slider__text--1");
-  var slideText2 = document.querySelector(".slider__text--2");
-  var slideText3 = document.querySelector(".slider__text--3");
-  var slideImg = document.querySelector(".slider-img");
-  var slideImg1 = document.querySelector(".slider-img--1");
-  var slideImg2 = document.querySelector(".slider-img--2");
-  var slideImg3 = document.querySelector(".slider-img--3");
-  var slide1 = document.querySelectorAll('.slide__1');
-  var slide2 = document.querySelectorAll('.slide__2');
-  var slide3 = document.querySelectorAll('.slide__3');
-  var sliderImgs = document.querySelectorAll('.slider-img')
+    var link = document.querySelector(".conacts__btn");
+    var popup = document.querySelector(".modal-window");
+    var close = document.querySelector(".modal-window__close-btn");
+    var login = document.querySelector("[name=login]");
+    var form = document.querySelector(".modal-window__login-form");
+    var email = document.querySelector("[name=email]");
+    var textarea = document.querySelector("[name=textarea]");
+    var storage = localStorage.getItem("login");
+    var slideBtn1 = document.querySelector(".slider__switch__btn--1");
+    var slideBtn2 = document.querySelector(".slider__switch__btn--2");
+    var slideBtn3 = document.querySelector(".slider__switch__btn--3");
+    var slideText1 = document.querySelector(".slider__text--1");
+    var slideText2 = document.querySelector(".slider__text--2");
+    var slideText3 = document.querySelector(".slider__text--3");
+    var slideImg = document.querySelector(".slider-img");
+    var slideImg1 = document.querySelector(".slider-img--1");
+    var slideImg2 = document.querySelector(".slider-img--2");
+    var slideImg3 = document.querySelector(".slider-img--3");
+    var slide1 = document.querySelectorAll('.slide__1');
+    var slide2 = document.querySelectorAll('.slide__2');
+    var slide3 = document.querySelectorAll('.slide__3');
+    var sliderImgs = document.querySelectorAll('.slider-img')
 
 
-  dataSlide1 = {
-    button: slideBtn1,
-    image: slideImg1,
-    text: slideText1
-  }
+    dataSlide1 = {
+        button: slideBtn1,
+        image: slideImg1,
+        text: slideText1
+    }
 
-  dataSlide2 = {
-    button: slideBtn2,
-    image: slideImg2,
-    text: slideText2
-  }
+    dataSlide2 = {
+        button: slideBtn2,
+        image: slideImg2,
+       text: slideText2
+    }
 
-  dataSlide3 = {
-    button: slideBtn3,
-    image: slideImg3,
-    text: slideText3
-  }
-  var slider = [dataSlide1, dataSlide2, dataSlide3];
-  var blockSlider = document.querySelector('.advantages__slider');
+    dataSlide3 = {
+        button: slideBtn3,
+        image: slideImg3,
+        text: slideText3
+    }
+    var slider = [dataSlide1, dataSlide2, dataSlide3];
+    var blockSlider = document.querySelector('.advantages__slider');
 
-  var FOTO_DATA = ['img-nerds/slide1.png', 'img-nerds/slide2.png', 'img-nerds/slide3.png'];
-  var DESCRIPTION_DATA = ['Математически выверенный дизайн для вашео сайта или мобильного приложения',
-   'Никакого креатива только математические формулы для расчета идеальных пропорций',
+    var FOTO_DATA = ['img-nerds/slide1.png', 'img-nerds/slide2.png', 'img-nerds/slide3.png'];
+    var DESCRIPTION_DATA = ['Математически выверенный дизайн для вашео сайта или мобильного приложения',
+    'Никакого креатива только математические формулы для расчета идеальных пропорций',
     'Работать днем как все? мы против этого.<br>Ближе к полуночи работа только начинается'];
-  var TITLE_DATA = ['Долго, дорого, скрупулезно.', 'Любим математику как никто другой', 'Только ночь только хардкор.'];
-  var buttons = document.querySelectorAll('.slider__switch__btn');
-  sliderClass = ['slider-img--1', 'slider-img--2', 'slider-img--3'];
-
-  
+    var TITLE_DATA = ['Долго, дорого, скрупулезно.', 'Любим математику как никто другой', 'Только ночь только хардкор.'];
+    var buttons = document.querySelectorAll('.slider__switch__btn');
+    sliderClass = ['slider-img--1', 'slider-img--2', 'slider-img--3'];
 
   // слайдер, вариант с подменной данных
-  var clickButton = function(number) {
-     blockSlider.querySelector('.slider-img').src = FOTO_DATA[number];
-     blockSlider.querySelector('.slider__text-description').textContent = DESCRIPTION_DATA[number];
-     blockSlider.querySelector('.slider__title').textContent = TITLE_DATA[number];
-     for(i = 0; i <= 2; i++) {
-      if (buttons[i].classList.contains('slider__switch__btn--visited')) {
-        buttons[i].classList.toggle('slider__switch__btn--visited');
-    }}
-    buttons[number].classList.toggle('slider__switch__btn--visited');
-}
+    var clickButton = function(number) {
+        blockSlider.querySelector('.slider-img').src = FOTO_DATA[number];
+        blockSlider.querySelector('.slider__text-description').textContent = DESCRIPTION_DATA[number];
+        blockSlider.querySelector('.slider__title').textContent = TITLE_DATA[number];
+        for (i = 0; i <= 2; i++) {
+            if (buttons[i].classList.contains('slider__switch__btn--visited')) {
+            buttons[i].classList.toggle('slider__switch__btn--visited');
+            }
+        }
+        buttons[number].classList.toggle('slider__switch__btn--visited');
+    }
 
-//обработчики событий
-  buttons[0].addEventListener("click", function() {
-   clickButton(0);
-   slideImg.classList.add('slider-img--1');
+  //обработчики событий
+    buttons[0].addEventListener("click", function() {
+        clickButton(0);
+        slideImg.classList.add('slider-img--1');
 
-   /*   if (!buttons[number].classList.contains('slider-img--1')) {
-    slideImg.classList.toggle('slider-img--1');
-   } if (buttons[number].classList.contains('slider-img--2')){
-    slideImg.classList.toggle('slider-img--2');
-   } if (buttons[number].classList.contains('slider-img--2')){
-    slideImg.classList.toggle('slider-img--3');
-   } */
-  });
-
-  buttons[1].addEventListener("click", function() {
-   clickButton(1);
+  /*   if (!buttons[number].classList.contains('slider-img--1')) {
+   slideImg.classList.toggle('slider-img--1');
+  } if (buttons[number].classList.contains('slider-img--2')){
    slideImg.classList.toggle('slider-img--2');
-  });
-
-  buttons[2].addEventListener("click", function() {
-   clickButton(2);
+  } if (buttons[number].classList.contains('slider-img--2')){
    slideImg.classList.toggle('slider-img--3');
+  } */
   });
 
+    buttons[1].addEventListener("click", function() {
+        clickButton(1);
+        slideImg.classList.toggle('slider-img--2');
+    });
 
-  //код слайдера с созданием элементов
+    buttons[2].addEventListener("click", function() {
+        clickButton(2);
+        slideImg.classList.toggle('slider-img--3');
+    });
+
+
+//код слайдера с созданием элементов
 /*
   (function() {
     var sliderImg = document.querySelector('.slider-img');
