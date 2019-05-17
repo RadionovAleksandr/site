@@ -54,14 +54,14 @@
                 <img class="slider-img slider-img--3" src="img-nerds/slide3.png" alt="слайдер3">
             </div>
             <div class="slider__switch">
-                <button class="slider__switch__btn slider__switch__btn--visited" data-id="1"></button>
-                <button class="slider__switch__btn" data-id="2"></button>
-                <button class="slider__switch__btn" data-id="3"></button>
+                <button class="slider__toggle slider__toggle--visited" data-id="1"></button>
+                <button class="slider__toggle " data-id="2"></button>
+                <button class="slider__toggle " data-id="3"></button>
             </div>
         </section>
         <section class="service">
             <div class="service__wrap">
-                <h2 class="visually-hidden">Перечень предоставляемых услуг</h2>
+                <h2 class="hidden">Перечень предоставляемых услуг</h2>
                 <div class="service__item">
                     <img src="img-nerds/illustration-1websites.png" alt="Вэбсайты">
                     <h2>Веб-сайты</h2>
@@ -122,16 +122,16 @@
         <section class="clients">
             <hr class="clients__line-hr--up">
             <div class="clients__leibls">
-                <div>
+                <div class="clients__logo">
                     <a href="#"><img src="img-nerds/logo-1.png" alt=""></a>
                 </div>
-                <div>
+                <div class="clients__logo">
                     <a href="#"><img src="img-nerds/logo-2.png" alt=""></a>
                 </div>
-                <div>
+                <div class="clients__logo">
                     <a href="#"><img src="img-nerds/logo-3.png" alt=""></a>
                 </div>
-                <div>
+                <div class="clients__logo">
                     <a href="#"><img src="img-nerds/logo-4.png" alt=""></a>
                 </div>
             </div>
@@ -154,19 +154,19 @@
                 <div>
                     <a class="for-frends__social-web-button for-frends__social-web-button--vk" href="#">
                         <img class="social-web-button__img social-web-button__img--vk" src="img-nerds/vk-icon.png" alt="иконка вконтакте">
-                        <span class="visually-hidden">Вконтакте</span>
+                        <span class="hidden">Вконтакте</span>
                     </a>
                 </div>
                 <div>
                     <a class="for-frends__social-web-button for-frends__social-web-button--fb" href="#">
                         <img class="social-web-button__img social-web-button__img--fb" src="img-nerds/fb-icon.png" alt="иконка фейсбука">
-                        <span class="visually-hidden">Фейсбук</span>
+                        <span class="hidden">Фейсбук</span>
                     </a>
                 </div>
                 <div>
                     <a class="for-frends__social-web-button for-frends__social-web-button--insta" href="#">
                         <img class="social-web-button__img social-web-button__img--insta" src="img-nerds/insta-icon.png" alt="иконка инстаграмма">
-                        <span class="visually-hidden">Инстаграмм</span>
+                        <span class="hidden">Инстаграмм</span>
                     </a>
                 </div>
             </div>
@@ -183,12 +183,12 @@
         <form class="modal-window__login-form" action="#" method="post">
             <fieldset class="modal-window__user-name">
                 <legend><label class="" for="user-login"><b>Ваше имя:</b></label></legend>
-                <input class="modal-window__input_user" id="user-login" type="text" name="login" placeholder="Представтесь, пожалуйста">
+                <input class="modal-window__input_user" id="user-login" type="text" name="login" maxlength="25" placeholder="Представтесь, пожалуйста">
             </fieldset>
 
             <fieldset class="modal-window__user-mail">
                 <legend><label class="" for="user-email"><b>Ваш e-mail:</b></label></legend>
-                <input class="modal-window__input_email" id="user-email" type="email" name="email" placeholder="Для отправки ответа">
+                <input class="modal-window__input_email" id="user-email" type="email" name="email" placeholder="Для отправки ответа" required>
             </fieldset>
             <fieldset class="modal-window__text-area">
                 <legend><label for="textarea"><b>Текст письма:</b></label></legend>
