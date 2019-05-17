@@ -175,7 +175,17 @@ hr {
     height: 15px;
 }
 
-.advantages__slider {
+.advantages {
+    position: relative;
+}
+
+.slider {
+    display: none;
+    min-height: 367px;
+}
+
+.slide--active {
+    display: block;
     position: relative;
     width: 1440px;
     display: flex;
@@ -201,7 +211,7 @@ hr {
 }
 
 .slider__text-description {
-    width: 370px;
+    width: 355px;
     margin: 25px 0;
 }
 
@@ -218,7 +228,7 @@ hr {
 }
 
 .slider-img--1 {
-    right: 220px;
+    right: 200px;
     width: 700px;
 }
 
@@ -230,13 +240,6 @@ hr {
 .slider-img--3 {
     width: 750px;
     right: 180px;
-}
-
-.slider__text--2,
-.slider__text--3,
-.slider-img--2,
-.slider-img--3 {
-    display: none;
 }
 
 .slider-show {
@@ -263,8 +266,8 @@ hr {
     min-height: 20px;
     left: 50%;
     top: 50%;
-    margin-left: -100px;
-    margin-top: 80px;
+    margin-left: 0;
+    margin-top: 55px;
     z-index: 1;
 }
 
@@ -583,6 +586,7 @@ hr {
     padding-left: 30px;
 }
 
+
 /* радио картинка */
 
 .filter__radio-item label::before {
@@ -594,6 +598,7 @@ hr {
     background-image: url("../img-nerds/radio-on.svg");
     background-repeat: no-repeat;
 }
+
 
 /* чексбокс картинка */
 

@@ -29,32 +29,34 @@
     </header>
     <main class="page__main">
         <section class="advantages">
-            <div class="advantages__slider">
-                <div class="slider__text slider__text--1 slider__1 ">
+            <div class="slider slide--active" data-id="1">
+                <div class="slider__text">
                     <h1 class="slider__title">Долго, дорого, скрупулезно.</h1>
                     <p class="slider__text-description">Математически выверенный дизайн<br> для вашео сайта или мобильного приложения</p>
                     <a class="slider__button button" href="#">Узнать больше</a>
                 </div>
-            <!--    <div class="slider__text slider__text--2 slider__2">
+                <img class="slider-img--1 slider-img" src="img-nerds/slide1.png" alt="слайдер1">
+            </div>
+            <div class="slider" data-id="2">
+                <div class="slider__text">
                     <h1 class="slider-title">Любим математику<br> как никто другой.</h1>
                     <p>Никакого креатива только математические формулы<br>для расчета идеальных пропорций</p>
                     <a class="slider__button button" href="#">Узнать больше</a>
                 </div>
-                <div class="slider__text slider__text--3 slider__3">
+                <img class="slider-img slider-img--2" src="img-nerds/slide2.png" alt="слайдер2">
+            </div>
+            <div class="slider" data-id="3">
+                <div class="slider__text">
                     <h1 class="slider-title">Только ночь<br> только хардкор.</h1>
                     <p>Работать днем как все? мы против этого.<br>Ближе к полуночи работа только начинается</p>
                     <a class="slider__button button" href="#">Узнать больше</a>
                 </div>
-             -->
-                <div class="slider__switch">
-                    <button class="slider__switch__btn slider__switch__btn--1 slider__switch__btn--visited"></button>
-                    <button class="slider__switch__btn slider__switch__btn--2"></button>
-                    <button class="slider__switch__btn slider__switch__btn--3" ></button>
-                </div>
-                <img class="slider-img--1 slider__1 slider-img" src="img-nerds/slide1.png" alt="слайдер1">
-               <!-- <img class="slider-img--2 slider__2" src="img-nerds/slide2.png" alt="слайдер2">
-                <img class="slider-img--3 slider__3" src="img-nerds/slide3.png" alt="слайдер2">
-                -->
+                <img class="slider-img slider-img--3" src="img-nerds/slide3.png" alt="слайдер3">
+            </div>
+            <div class="slider__switch">
+                <button class="slider__switch__btn slider__switch__btn--visited" data-id="1"></button>
+                <button class="slider__switch__btn" data-id="2"></button>
+                <button class="slider__switch__btn" data-id="3"></button>
             </div>
         </section>
         <section class="service">
@@ -69,13 +71,15 @@
                 <div class="service__item">
                     <img src="img-nerds/illustration-2advantegs.png" alt="Приложения">
                     <h2>Приложения</h2>
-                    <p class="service__text">Покороите топ-10 приложений в<br> AppStore и Google Play</p>
+                    <p class="service__text">Покороите топ-10 приложений в<br> AppStore и Google Play
+                    </p>
                     <a class="button service__btn--applications" href="#">Заказать</a>
                 </div>
                 <div class="service__item">
                     <img src="img-nerds/illustration-3presentation.png" alt="Презентации">
                     <h2>Презентации</h2>
-                    <p class="service__text">Вы даже не подозреваете,<br>насколько вы изумительны!</p>
+                    <p class="service__text">Вы даже не подозреваете,<br>насколько вы изумительны!
+                    </p>
                     <a class="button service__btn--presentation" href="#">Заказать</a>
                 </div>
             </div>
@@ -86,15 +90,14 @@
                 <div class="information__text--big">
                     <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
                 </div>
-                <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше креатива.
-                    Работаем не
-                    покладая рук, как роботы.</p>
+                <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше креатива. Работаем не покладая рук, как роботы.</p>
                 <p class="about-us__order-text"><strong>Выполняем заказы на разработку:</strong></p>
-                <p class="order-text__text"><span class="about-us__defis">—</span>Веб сайтов любой сложности</p>
+                <p class="order-text__text"><span class="about-us__defis">—</span>Веб сайтов любой сложности
+                </p>
                 <p class="order-text__text"><span class="about-us__defis">—</span>Мобильных приложений для IOS и Android
                 </p>
-                <p class="order-text__text"><span class="about-us__defis">—</span>Слайд шоу и видео для корпоративных
-                    организаций</p>
+                <p class="order-text__text"><span class="about-us__defis">—</span>Слайд шоу и видео для корпоративных организаций
+                </p>
             </div>
             <div class="information__counter">
                 <img src="img-nerds/nerds-illustrationpresentation.png" alt="Иллюстрация">
@@ -119,18 +122,25 @@
         <section class="clients">
             <hr class="clients__line-hr--up">
             <div class="clients__leibls">
-                <div><a href="#"><img src="img-nerds/logo-1.png" alt=""></a></div>
-                <div><a href="#"><img src="img-nerds/logo-2.png" alt=""></a></div>
-                <div><a href="#"><img src="img-nerds/logo-3.png" alt=""></a></div>
-                <div><a href="#"><img src="img-nerds/logo-4.png" alt=""></a></div>
+                <div>
+                    <a href="#"><img src="img-nerds/logo-1.png" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img-nerds/logo-2.png" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img-nerds/logo-3.png" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img-nerds/logo-4.png" alt=""></a>
+                </div>
             </div>
             <hr class="clients_line-hr--down">
         </section>
     </main>
     <footer class="footer">
         <div class="footer__map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533252!2d30.32085871585195!3d59.938716481876185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1553653396543"
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533252!2d30.32085871585195!3d59.938716481876185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1553653396543"
                 width="1440" height="420" frameborder="0" style="border:0" allowfullscreen></iframe>
             <div class="footer__contacts">
                 <p class="contacts__organization-name"><b>Nerds design studio</b></p>
@@ -143,22 +153,19 @@
             <div class="for-frends__social-web">
                 <div>
                     <a class="for-frends__social-web-button for-frends__social-web-button--vk" href="#">
-                        <img class="social-web-button__img social-web-button__img--vk" src="img-nerds/vk-icon.png"
-                            alt="иконка вконтакте">
+                        <img class="social-web-button__img social-web-button__img--vk" src="img-nerds/vk-icon.png" alt="иконка вконтакте">
                         <span class="visually-hidden">Вконтакте</span>
                     </a>
                 </div>
                 <div>
                     <a class="for-frends__social-web-button for-frends__social-web-button--fb" href="#">
-                        <img class="social-web-button__img social-web-button__img--fb" src="img-nerds/fb-icon.png"
-                            alt="иконка фейсбука">
+                        <img class="social-web-button__img social-web-button__img--fb" src="img-nerds/fb-icon.png" alt="иконка фейсбука">
                         <span class="visually-hidden">Фейсбук</span>
                     </a>
                 </div>
                 <div>
                     <a class="for-frends__social-web-button for-frends__social-web-button--insta" href="#">
-                        <img class="social-web-button__img social-web-button__img--insta" src="img-nerds/insta-icon.png"
-                            alt="иконка инстаграмма">
+                        <img class="social-web-button__img social-web-button__img--insta" src="img-nerds/insta-icon.png" alt="иконка инстаграмма">
                         <span class="visually-hidden">Инстаграмм</span>
                     </a>
                 </div>
@@ -176,19 +183,16 @@
         <form class="modal-window__login-form" action="#" method="post">
             <fieldset class="modal-window__user-name">
                 <legend><label class="" for="user-login"><b>Ваше имя:</b></label></legend>
-                <input class="modal-window__input_user" id="user-login" type="text" name="login"
-                    placeholder="Представтесь, пожалуйста">
+                <input class="modal-window__input_user" id="user-login" type="text" name="login" placeholder="Представтесь, пожалуйста">
             </fieldset>
-            
+
             <fieldset class="modal-window__user-mail">
                 <legend><label class="" for="user-email"><b>Ваш e-mail:</b></label></legend>
-                <input class="modal-window__input_email" id="user-email" type="email" name="email"
-                    placeholder="Для отправки ответа">
+                <input class="modal-window__input_email" id="user-email" type="email" name="email" placeholder="Для отправки ответа">
             </fieldset>
             <fieldset class="modal-window__text-area">
                 <legend><label for="textarea"><b>Текст письма:</b></label></legend>
-                <textarea class="text-letter" name="textarea" id="textarea" cols="30" rows="10"
-                    placeholder="В свободной форме"></textarea>
+                <textarea class="text-letter" name="textarea" id="textarea" cols="30" rows="10" placeholder="В свободной форме"></textarea>
             </fieldset>
             <button class="modal-window__btn button" type="submit">Отправить</a>
         </form>
