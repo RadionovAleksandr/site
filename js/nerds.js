@@ -81,40 +81,64 @@
     });
 
     // создаю масиивы с данными карточек каталога, и наполняю каталог карточками с данными
-    var cardTitleData = ['SEDONA', 'PINK', 'БАРБЕРШОП', 'MISHKA', 'APLUS', 'KVAST'];
-    var cardImgData = [
-        "img-nerds/img-sedona.jpg",
-        "img-nerds/img-pink.jpg",
-        "img-nerds/img-barbershop.jpg",
-        "img-nerds/img-mishka.jpg",
-        "img-nerds/img-aplus.jpg",
-        "img-nerds/img-kvast.jpg"
-    ];
-    var cardTextData = ['Информационный сайтдля туристов',
-        'Информационный сайтдля туристов',
-        'Информационный сайтдля туристов',
-        'Информационный сайтдля туристов',
-        'Информационный сайтдля туристов',
-        'Информационный сайтдля туристов'
+
+    var cardData = [
+        card1 = {
+            cardTitle: 'SEDONA',
+            cardImg: "img-nerds/img-sedona.jpg",
+            cardText: 'Информационный сайтдля туристов',
+            cardPrice: '9 900 РУБ'
+        },
+        card2 = {
+            cardTitle: 'PINK',
+            cardImg: "img-nerds/img-pink.jpg",
+            cardText: 'Информационный сайтдля туристов',
+            cardPrice: '10 000 РУБ'
+        },
+        card3 = {
+            cardTitle: 'БАРБЕРШОП',
+            cardImg: "img-nerds/img-barbershop.jpg",
+            cardText: 'Информационный сайтдля туристов',
+            cardPrice: '11 000 РУБ'
+        },
+        card4 = {
+            cardTitle: "img-nerds/img-mishka.jpg",
+            cardImg: "img-nerds/img-barbershop.jpg",
+            cardText: 'Информационный сайтдля туристов',
+            cardPrice: '18 000 РУБ',
+        },
+        card5 = {
+            cardTitle: 'APLUS',
+            cardImg: "img-nerds/img-aplus.jpg",
+            cardText: 'Информационный сайтдля туристов',
+            cardPrice: '9 500 РУБ',
+        },
+        card6 = {
+            cardTitle: 'KVAST',
+            cardImg: "img-nerds/img-kvast.jpg",
+            cardText: 'Информационный сайтдля туристов',
+            cardPrice: '9 800 РУБ',
+        },
+
     ];
 
-    var cardPriceData = ['9 900 РУБ', '10 000 РУБ', '11 000 РУБ', '9 000 РУБ', '9 500 РУБ', '9 800 РУБ'];
     var ListElement = document.querySelector('.catalog');
     var fragment = document.createDocumentFragment();
-    var cardTemplate = document.querySelector('#card')
-        .content
-        .querySelector('.card');
 
     var createCard = function(create) {
+        var cardTemplate = document.querySelector('#card')
+
         for (var i = 0; i < create; i++) {
             var catalogElement = cardTemplate.cloneNode(true);
-            catalogElement.querySelector('.card__item-img').src = cardImgData[i];
-            catalogElement.querySelector('.card__title').textContent = cardTitleData[i];
-            catalogElement.querySelector('.card__text').textContent = cardTextData[i];
-            catalogElement.querySelector('.card__button').textContent = cardPriceData[i];
+            catalogElement.querySelector('.card__item-img').src = cardData[i].cardImg;
+            catalogElement.querySelector('.card__title').textContent = cardData[i].cardTitle;
+            catalogElement.querySelector('.card__text').textContent = cardData[i].cardText;
+            catalogElement.querySelector('.card__button').textContent = cardData[i].cardPrice;
             fragment.appendChild(catalogElement);
         }
         ListElement.appendChild(fragment);
     }
-    createCard(6);
+    if (ListElement) {
+        createCard(cardData.length);
+    };
 })();
