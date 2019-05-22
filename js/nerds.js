@@ -39,7 +39,7 @@
 
     for (i = 0; i < buttons.length; i++) {
 
-        if (window.buttons[i].dataset.id === id) {
+        if (buttons[i].dataset.id === window.id) {
             buttons[i].classList.add('slider__toggle--visited');
         } else {
             buttons[i].classList.remove('slider__toggle--visited');
