@@ -25,6 +25,15 @@
                 }
 
             }
+            for (i = 0; i < buttons.length; i++) {
+
+                if (btn.dataset.id === id) {
+                    btn.classList.add('slider__toggle--visited');
+                } else {
+                    btn.classList.remove('slider__toggle--visited');
+                }
+
+            }
         }
         // var onButtonClick = function(evt) {
         //     var id = evt.target.dataset.id;
@@ -37,16 +46,16 @@
         //     })
 
     // теперь устанавливаем активной кнопочку
-    // здесь расскомментировать
-    // for (i = 0; i < buttons.length; i++) {
+    // здесь комментируем
+    //     for (i = 0; i < buttons.length; i++) {
 
-    //     if (btn.dataset.id === id) {
-    //         btn.classList.add('slider__toggle--visited');
-    //     } else {
-    //         btn.classList.remove('slider__toggle--visited');
+    //         if (btn.dataset.id === id) {
+    //             btn.classList.add('slider__toggle--visited');
+    //         } else {
+    //             btn.classList.remove('slider__toggle--visited');
+    //         }
+
     //     }
-
-    // }
 
     // buttons.forEach(function(btn) {
     //     if (btn.dataset.id === id) {
