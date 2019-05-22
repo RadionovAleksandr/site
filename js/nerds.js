@@ -12,34 +12,44 @@
 
     var slides = document.querySelectorAll('.slider');
 
-    var onButtonClick = function(evt) {
-        var id = evt.target.dataset.id;
-        slides.forEach(function(slide) {
-            if (slide.dataset.id === id) {
-                slide.classList.add('slide--active');
-            } else {
-                slide.classList.remove('slide--active');
-            };
-        })
 
-        // теперь устанавливаем активной кнопочку
-        buttons.forEach(function(btn) {
-            if (btn.dataset.id === id) {
-                btn.classList.add('slider__toggle--visited');
-            } else {
-                btn.classList.remove('slider__toggle--visited');
+    var onButtonClick = function(evt) {
+            var id = evt.target.dataset.id;
+            for (i = 0; i < slides.length; i++) {
+                if (slide.dataset.id === id) {
+                    slide.classList.add('slide--active');
+                } else {
+                    slide.classList.remove('slide--active');
+                }
             }
-        });
-    }
+        }
+        // var onButtonClick = function(evt) {
+        //     var id = evt.target.dataset.id;
+        //     slides.forEach(function(slide) {
+        //         if (slide.dataset.id === id) {
+        //             slide.classList.add('slide--active');
+        //         } else {
+        //             slide.classList.remove('slide--active');
+        //         };
+        //     })
+
+    // теперь устанавливаем активной кнопочку
+    buttons.forEach(function(btn) {
+        if (btn.dataset.id === id) {
+            btn.classList.add('slider__toggle--visited');
+        } else {
+            btn.classList.remove('slider__toggle--visited');
+        }
+    });
+
 
     for (i = 0; i < buttons.length; i++) {
-        debugger
         if (!buttons) {
             return;
         }
         buttons[i].addEventListener('click', onButtonClick);
         console.log('клик');
-    }
+    };
 
     // buttons.forEach(function(button) {
     //     if (!buttons) {
