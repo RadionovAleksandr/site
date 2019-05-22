@@ -16,7 +16,7 @@
     var onButtonClick = function(evt) {
 
             for (i = 0; i < slides.length; i++) {
-                var id = evt.target.dataset.id;
+                var id = window.evt.target.dataset.id;
                 if (slides[i].dataset.id === id) {
                     slides[i].classList.add('slide--active');
                 } else {
@@ -39,7 +39,7 @@
 
     for (i = 0; i < buttons.length; i++) {
 
-        if (buttons[i].dataset.id === id) {
+        if (window.buttons[i].dataset.id === id) {
             buttons[i].classList.add('slider__toggle--visited');
         } else {
             buttons[i].classList.remove('slider__toggle--visited');
