@@ -34,13 +34,24 @@
         //     })
 
     // теперь устанавливаем активной кнопочку
-    buttons.forEach(function(btn) {
-        if (btn.dataset.id === id) {
-            btn.classList.add('slider__toggle--visited');
-        } else {
-            btn.classList.remove('slider__toggle--visited');
-        }
-    });
+
+    for (i = 0; i < buttons.length; i++) {
+        (function(btn) {
+            if (btn.dataset.id === id) {
+                btn.classList.add('slider__toggle--visited');
+            } else {
+                btn.classList.remove('slider__toggle--visited');
+            }
+        })
+    }
+
+    // buttons.forEach(function(btn) {
+    //     if (btn.dataset.id === id) {
+    //         btn.classList.add('slider__toggle--visited');
+    //     } else {
+    //         btn.classList.remove('slider__toggle--visited');
+    //     }
+    // });
 
 
     for (i = 0; i < buttons.length; i++) {
