@@ -6,7 +6,7 @@
     var form = document.querySelector(".modal-window__login-form");
     var email = document.querySelector("[name=email]");
     var textarea = document.querySelector("[name=textarea]");
-    var storage = window.localStorage.getItem("login");
+    // var storage = window.localStorage.getItem("login");
     var buttons = document.querySelectorAll('.slider__toggle');
 
 
@@ -14,9 +14,10 @@
 
 
     var onButtonClick = function(evt) {
-
+            var id = evt.target.dataset.id;
+            console.log(id);
             for (i = 0; i < slides.length; i++) {
-                var id = window.evt.target.dataset.id;
+
                 if (slides[i].dataset.id === id) {
                     slides[i].classList.add('slide--active');
                 } else {
@@ -36,16 +37,16 @@
         //     })
 
     // теперь устанавливаем активной кнопочку
+    // здесь расскомментировать
+    // for (i = 0; i < buttons.length; i++) {
 
-    for (i = 0; i < buttons.length; i++) {
+    //     if (btn.dataset.id === id) {
+    //         btn.classList.add('slider__toggle--visited');
+    //     } else {
+    //         btn.classList.remove('slider__toggle--visited');
+    //     }
 
-        if (buttons[i].dataset.id === window.id) {
-            buttons[i].classList.add('slider__toggle--visited');
-        } else {
-            buttons[i].classList.remove('slider__toggle--visited');
-        }
-
-    }
+    // }
 
     // buttons.forEach(function(btn) {
     //     if (btn.dataset.id === id) {
