@@ -37,7 +37,7 @@
         if (!buttons) {
             return;
         }
-        button[i].addEventListener('click', onButtonClick);
+        buttons[i].addEventListener('click', onButtonClick);
         console.log('клик');
     }
 
