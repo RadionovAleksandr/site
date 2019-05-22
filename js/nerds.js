@@ -6,7 +6,7 @@
     var form = document.querySelector(".modal-window__login-form");
     var email = document.querySelector("[name=email]");
     var textarea = document.querySelector("[name=textarea]");
-    var storage = localStorage.getItem("login");
+    var storage = window.localStorage.getItem("login");
     var buttons = document.querySelectorAll('.slider__toggle');
 
 
@@ -32,13 +32,22 @@
         });
     }
 
-    buttons.forEach(function(button) {
+    for (i = 0; i < buttons.length; i++) {
+        debugger
         if (!buttons) {
             return;
         }
         button.addEventListener('click', onButtonClick);
         console.log('клик');
-    });
+    }
+
+    // buttons.forEach(function(button) {
+    //     if (!buttons) {
+    //         return;
+    //     }
+    //     button.addEventListener('click', onButtonClick);
+    //     console.log('клик');
+    // });
 
 
     link.addEventListener("click", function(evt) {
@@ -102,8 +111,8 @@
             cardPrice: '11 000 РУБ'
         },
         card4 = {
-            cardTitle: "img-nerds/img-mishka.jpg",
-            cardImg: "img-nerds/img-barbershop.jpg",
+            cardTitle: "mishka",
+            cardImg: "img-nerds/img-mishka.jpg",
             cardText: 'Информационный сайтдля туристов',
             cardPrice: '18 000 РУБ',
         },
