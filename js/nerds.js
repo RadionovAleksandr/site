@@ -16,11 +16,13 @@
     var onButtonClick = function(evt) {
             var id = evt.target.dataset.id;
             for (i = 0; i < slides.length; i++) {
-                if (slide.dataset.id === id) {
-                    slide.classList.add('slide--active');
+
+                if (slides[i].dataset.id === id) {
+                    slides[i].classList.add('slide--active');
                 } else {
-                    slide.classList.remove('slide--active');
+                    slides[i].classList.remove('slide--active');
                 }
+
             }
         }
         // var onButtonClick = function(evt) {
@@ -36,13 +38,13 @@
     // теперь устанавливаем активной кнопочку
 
     for (i = 0; i < buttons.length; i++) {
-        (function(btn) {
-            if (btn.dataset.id === id) {
-                btn.classList.add('slider__toggle--visited');
-            } else {
-                btn.classList.remove('slider__toggle--visited');
-            }
-        })
+
+        if (buttons[i].dataset.id === id) {
+            buttons[i].classList.add('slider__toggle--visited');
+        } else {
+            buttons[i].classList.remove('slider__toggle--visited');
+        }
+
     }
 
     // buttons.forEach(function(btn) {
