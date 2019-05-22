@@ -14,9 +14,9 @@
 
 
     var onButtonClick = function(evt) {
-            var id = evt.target.dataset.id;
-            for (i = 0; i < slides.length; i++) {
 
+            for (i = 0; i < slides.length; i++) {
+                var id = evt.target.dataset.id;
                 if (slides[i].dataset.id === id) {
                     slides[i].classList.add('slide--active');
                 } else {
