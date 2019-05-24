@@ -14,56 +14,27 @@
 
 
     var onButtonClick = function(evt) {
-            var id = evt.target.dataset.id;
-            console.log(id);
-            for (i = 0; i < slides.length; i++) {
+        var id = evt.target.dataset.id;
+        console.log(id);
+        for (i = 0; i < slides.length; i++) {
 
-                if (slides[i].dataset.id === id) {
-                    slides[i].classList.add('slide--active');
-                } else {
-                    slides[i].classList.remove('slide--active');
-                }
-
+            if (slides[i].dataset.id === id) {
+                slides[i].classList.add('slide--active');
+            } else {
+                slides[i].classList.remove('slide--active');
             }
-            for (i = 0; i < buttons.length; i++) {
 
-                if (buttons[i].dataset.id === id) {
-                    buttons[i].classList.add('slider__toggle--visited');
-                } else {
-                    buttons[i].classList.remove('slider__toggle--visited');
-                }
-
-            }
         }
-        // var onButtonClick = function(evt) {
-        //     var id = evt.target.dataset.id;
-        //     slides.forEach(function(slide) {
-        //         if (slide.dataset.id === id) {
-        //             slide.classList.add('slide--active');
-        //         } else {
-        //             slide.classList.remove('slide--active');
-        //         };
-        //     })
+        for (i = 0; i < buttons.length; i++) {
 
-    // теперь устанавливаем активной кнопочку
-    // здесь комментируем
-    //     for (i = 0; i < buttons.length; i++) {
+            if (buttons[i].dataset.id === id) {
+                buttons[i].classList.add('slider__toggle--visited');
+            } else {
+                buttons[i].classList.remove('slider__toggle--visited');
+            }
 
-    //         if (btn.dataset.id === id) {
-    //             btn.classList.add('slider__toggle--visited');
-    //         } else {
-    //             btn.classList.remove('slider__toggle--visited');
-    //         }
-
-    //     }
-
-    // buttons.forEach(function(btn) {
-    //     if (btn.dataset.id === id) {
-    //         btn.classList.add('slider__toggle--visited');
-    //     } else {
-    //         btn.classList.remove('slider__toggle--visited');
-    //     }
-    // });
+        }
+    }
 
 
     for (i = 0; i < buttons.length; i++) {
@@ -73,14 +44,6 @@
         buttons[i].addEventListener('click', onButtonClick);
         console.log('клик');
     };
-
-    // buttons.forEach(function(button) {
-    //     if (!buttons) {
-    //         return;
-    //     }
-    //     button.addEventListener('click', onButtonClick);
-    //     console.log('клик');
-    // });
 
 
     link.addEventListener("click", function(evt) {
